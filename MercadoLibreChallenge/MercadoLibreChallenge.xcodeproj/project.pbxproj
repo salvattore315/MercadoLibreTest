@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7378258E9DDF003DA983 /* AppDelegate.swift */; };
+		BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */; };
+		BE5C737D258E9DDF003DA983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C737C258E9DDF003DA983 /* ViewController.swift */; };
+		BE5C7380258E9DDF003DA983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C737E258E9DDF003DA983 /* Main.storyboard */; };
+		BE5C7383258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7381258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld */; };
+		BE5C7385258E9DE1003DA983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5C7384258E9DE1003DA983 /* Assets.xcassets */; };
+		BE5C7388258E9DE1003DA983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C7386258E9DE1003DA983 /* LaunchScreen.storyboard */; };
+		BE5C7393258E9DE1003DA983 /* MercadoLibreChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7392258E9DE1003DA983 /* MercadoLibreChallengeTests.swift */; };
+		BE5C739E258E9DE1003DA983 /* MercadoLibreChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C739D258E9DE1003DA983 /* MercadoLibreChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE5C738F258E9DE1003DA983 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5C736D258E9DDE003DA983 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE5C7374258E9DDF003DA983;
+			remoteInfo = MercadoLibreChallenge;
+		};
+		BE5C739A258E9DE1003DA983 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5C736D258E9DDE003DA983 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE5C7374258E9DDF003DA983;
+			remoteInfo = MercadoLibreChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5C7378258E9DDF003DA983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BE5C737C258E9DDF003DA983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE5C737F258E9DDF003DA983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE5C7382258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MercadoLibreChallenge.xcdatamodel; sourceTree = "<group>"; };
+		BE5C7384258E9DE1003DA983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE5C7387258E9DE1003DA983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE5C7389258E9DE1003DA983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5C738E258E9DE1003DA983 /* MercadoLibreChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoLibreChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5C7392258E9DE1003DA983 /* MercadoLibreChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibreChallengeTests.swift; sourceTree = "<group>"; };
+		BE5C7394258E9DE1003DA983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5C7399258E9DE1003DA983 /* MercadoLibreChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoLibreChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5C739D258E9DE1003DA983 /* MercadoLibreChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibreChallengeUITests.swift; sourceTree = "<group>"; };
+		BE5C739F258E9DE1003DA983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE5C7372258E9DDF003DA983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5C738B258E9DE1003DA983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5C7396258E9DE1003DA983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE5C736C258E9DDE003DA983 = {
+			isa = PBXGroup;
+			children = (
+				BE5C7377258E9DDF003DA983 /* MercadoLibreChallenge */,
+				BE5C7391258E9DE1003DA983 /* MercadoLibreChallengeTests */,
+				BE5C739C258E9DE1003DA983 /* MercadoLibreChallengeUITests */,
+				BE5C7376258E9DDF003DA983 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE5C7376258E9DDF003DA983 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */,
+				BE5C738E258E9DE1003DA983 /* MercadoLibreChallengeTests.xctest */,
+				BE5C7399258E9DE1003DA983 /* MercadoLibreChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE5C7377258E9DDF003DA983 /* MercadoLibreChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C7378258E9DDF003DA983 /* AppDelegate.swift */,
+				BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */,
+				BE5C737C258E9DDF003DA983 /* ViewController.swift */,
+				BE5C737E258E9DDF003DA983 /* Main.storyboard */,
+				BE5C7384258E9DE1003DA983 /* Assets.xcassets */,
+				BE5C7386258E9DE1003DA983 /* LaunchScreen.storyboard */,
+				BE5C7389258E9DE1003DA983 /* Info.plist */,
+				BE5C7381258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld */,
+			);
+			path = MercadoLibreChallenge;
+			sourceTree = "<group>";
+		};
+		BE5C7391258E9DE1003DA983 /* MercadoLibreChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C7392258E9DE1003DA983 /* MercadoLibreChallengeTests.swift */,
+				BE5C7394258E9DE1003DA983 /* Info.plist */,
+			);
+			path = MercadoLibreChallengeTests;
+			sourceTree = "<group>";
+		};
+		BE5C739C258E9DE1003DA983 /* MercadoLibreChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C739D258E9DE1003DA983 /* MercadoLibreChallengeUITests.swift */,
+				BE5C739F258E9DE1003DA983 /* Info.plist */,
+			);
+			path = MercadoLibreChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE5C7374258E9DDF003DA983 /* MercadoLibreChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5C73A2258E9DE1003DA983 /* Build configuration list for PBXNativeTarget "MercadoLibreChallenge" */;
+			buildPhases = (
+				BE5C7371258E9DDF003DA983 /* Sources */,
+				BE5C7372258E9DDF003DA983 /* Frameworks */,
+				BE5C7373258E9DDF003DA983 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MercadoLibreChallenge;
+			productName = MercadoLibreChallenge;
+			productReference = BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE5C738D258E9DE1003DA983 /* MercadoLibreChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5C73A5258E9DE1003DA983 /* Build configuration list for PBXNativeTarget "MercadoLibreChallengeTests" */;
+			buildPhases = (
+				BE5C738A258E9DE1003DA983 /* Sources */,
+				BE5C738B258E9DE1003DA983 /* Frameworks */,
+				BE5C738C258E9DE1003DA983 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5C7390258E9DE1003DA983 /* PBXTargetDependency */,
+			);
+			name = MercadoLibreChallengeTests;
+			productName = MercadoLibreChallengeTests;
+			productReference = BE5C738E258E9DE1003DA983 /* MercadoLibreChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE5C7398258E9DE1003DA983 /* MercadoLibreChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5C73A8258E9DE1003DA983 /* Build configuration list for PBXNativeTarget "MercadoLibreChallengeUITests" */;
+			buildPhases = (
+				BE5C7395258E9DE1003DA983 /* Sources */,
+				BE5C7396258E9DE1003DA983 /* Frameworks */,
+				BE5C7397258E9DE1003DA983 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5C739B258E9DE1003DA983 /* PBXTargetDependency */,
+			);
+			name = MercadoLibreChallengeUITests;
+			productName = MercadoLibreChallengeUITests;
+			productReference = BE5C7399258E9DE1003DA983 /* MercadoLibreChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE5C736D258E9DDE003DA983 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					BE5C7374258E9DDF003DA983 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					BE5C738D258E9DE1003DA983 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = BE5C7374258E9DDF003DA983;
+					};
+					BE5C7398258E9DE1003DA983 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = BE5C7374258E9DDF003DA983;
+					};
+				};
+			};
+			buildConfigurationList = BE5C7370258E9DDE003DA983 /* Build configuration list for PBXProject "MercadoLibreChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE5C736C258E9DDE003DA983;
+			productRefGroup = BE5C7376258E9DDF003DA983 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE5C7374258E9DDF003DA983 /* MercadoLibreChallenge */,
+				BE5C738D258E9DE1003DA983 /* MercadoLibreChallengeTests */,
+				BE5C7398258E9DE1003DA983 /* MercadoLibreChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE5C7373258E9DDF003DA983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5C7388258E9DE1003DA983 /* LaunchScreen.storyboard in Resources */,
+				BE5C7385258E9DE1003DA983 /* Assets.xcassets in Resources */,
+				BE5C7380258E9DDF003DA983 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5C738C258E9DE1003DA983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5C7397258E9DE1003DA983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE5C7371258E9DDF003DA983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5C737D258E9DDF003DA983 /* ViewController.swift in Sources */,
+				BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */,
+				BE5C7383258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld in Sources */,
+				BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5C738A258E9DE1003DA983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5C7393258E9DE1003DA983 /* MercadoLibreChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5C7395258E9DE1003DA983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5C739E258E9DE1003DA983 /* MercadoLibreChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE5C7390258E9DE1003DA983 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE5C7374258E9DDF003DA983 /* MercadoLibreChallenge */;
+			targetProxy = BE5C738F258E9DE1003DA983 /* PBXContainerItemProxy */;
+		};
+		BE5C739B258E9DE1003DA983 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE5C7374258E9DDF003DA983 /* MercadoLibreChallenge */;
+			targetProxy = BE5C739A258E9DE1003DA983 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE5C737E258E9DDF003DA983 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5C737F258E9DDF003DA983 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE5C7386258E9DE1003DA983 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5C7387258E9DE1003DA983 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE5C73A0258E9DE1003DA983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE5C73A1258E9DE1003DA983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE5C73A3258E9DE1003DA983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoLibreChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Colombia.MercadoLibre.MercadoLibreChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE5C73A4258E9DE1003DA983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoLibreChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Colombia.MercadoLibre.MercadoLibreChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE5C73A6258E9DE1003DA983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoLibreChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Colombia.MercadoLibre.MercadoLibreChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercadoLibreChallenge.app/MercadoLibreChallenge";
+			};
+			name = Debug;
+		};
+		BE5C73A7258E9DE1003DA983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoLibreChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Colombia.MercadoLibre.MercadoLibreChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercadoLibreChallenge.app/MercadoLibreChallenge";
+			};
+			name = Release;
+		};
+		BE5C73A9258E9DE1003DA983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoLibreChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Colombia.MercadoLibre.MercadoLibreChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MercadoLibreChallenge;
+			};
+			name = Debug;
+		};
+		BE5C73AA258E9DE1003DA983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MercadoLibreChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Colombia.MercadoLibre.MercadoLibreChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MercadoLibreChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE5C7370258E9DDE003DA983 /* Build configuration list for PBXProject "MercadoLibreChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5C73A0258E9DE1003DA983 /* Debug */,
+				BE5C73A1258E9DE1003DA983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5C73A2258E9DE1003DA983 /* Build configuration list for PBXNativeTarget "MercadoLibreChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5C73A3258E9DE1003DA983 /* Debug */,
+				BE5C73A4258E9DE1003DA983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5C73A5258E9DE1003DA983 /* Build configuration list for PBXNativeTarget "MercadoLibreChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5C73A6258E9DE1003DA983 /* Debug */,
+				BE5C73A7258E9DE1003DA983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5C73A8258E9DE1003DA983 /* Build configuration list for PBXNativeTarget "MercadoLibreChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5C73A9258E9DE1003DA983 /* Debug */,
+				BE5C73AA258E9DE1003DA983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE5C7381258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE5C7382258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodel */,
+			);
+			currentVersion = BE5C7382258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodel */;
+			path = MercadoLibreChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE5C736D258E9DDE003DA983 /* Project object */;
+}
