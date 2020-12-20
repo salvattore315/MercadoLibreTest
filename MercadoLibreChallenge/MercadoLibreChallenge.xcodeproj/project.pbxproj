@@ -20,6 +20,7 @@
 		BE5C73E3258EE3FB003DA983 /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C73E2258EE3FB003DA983 /* GlobalConstant.swift */; };
 		BE5C73F3258EE5DE003DA983 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C73F2258EE5DE003DA983 /* BaseViewController.swift */; };
 		BE5C73F8258EE66C003DA983 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C73F7258EE66C003DA983 /* Presenter.swift */; };
+		BE5C7431258EEF02003DA983 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7430258EEF02003DA983 /* TabBarViewController.swift */; };
 		BF6D7D06A2FCD54740838CD6 /* Pods_MercadoLibreChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A772EAC7E34C0F5C376325 /* Pods_MercadoLibreChallenge.framework */; };
 		CD610639F3A96219EAD10CE2 /* Pods_MercadoLibreChallenge_MercadoLibreChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F92DA142EF71DEB082A9AA /* Pods_MercadoLibreChallenge_MercadoLibreChallengeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		BE5C73E2258EE3FB003DA983 /* GlobalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
 		BE5C73F2258EE5DE003DA983 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BE5C73F7258EE66C003DA983 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		BE5C7430258EEF02003DA983 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C43F4B37F500691D6A657CDB /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig"; sourceTree = "<group>"; };
 		DE9B1D1D193D1CD662A141E8 /* Pods-MercadoLibreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge/Pods-MercadoLibreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +187,7 @@
 				BE5C73FC258EE790003DA983 /* DetailSearch */,
 				BE5C73F2258EE5DE003DA983 /* BaseViewController.swift */,
 				BE5C73F7258EE66C003DA983 /* Presenter.swift */,
+				BE5C7430258EEF02003DA983 /* TabBarViewController.swift */,
 			);
 			path = "Configuration Controllers";
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5C7431258EEF02003DA983 /* TabBarViewController.swift in Sources */,
 				BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */,
 				BE5C73F8258EE66C003DA983 /* Presenter.swift in Sources */,
 				BE5C73E3258EE3FB003DA983 /* GlobalConstant.swift in Sources */,
