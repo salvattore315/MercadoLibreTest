@@ -7,6 +7,7 @@ target 'MercadoLibreChallenge' do
 
   # Pods for MercadoLibreChallenge
   pod 'Alamofire'
+  pod 'SDWebImage'
 
   target 'MercadoLibreChallengeTests' do
     inherit! :search_paths

@@ -13,9 +13,10 @@ class SearchViewController: BaseViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
     
     public var itemSearched: String = ""
-    var items: [String] = []
+    var items: [ItemSearched] = []
     private let presenter = SearchPresenter()
     
     //MARK: - Lifecycle
@@ -56,7 +57,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: GlobalConstants.CellStrings.detailSearched,
                                                  for: indexPath) as! ItemTableViewCell
         let item = items[indexPath.row]
-        //cell.setup(post: post, index: indexPath.row)
+        cell.setup(item: item)
         return cell
     }
     
@@ -75,11 +76,19 @@ extension SearchViewController: BaseServiceView {
     }
     
     func setResponse(objectCodable: Any) {
-        
+        if let items = objectCodable as? [ItemSearched] {
+            self.items = items
+            self.tableView.reloadData()
+            setEmpty()
+        }
     }
     
     func setEmpty() {
-        
+        if(self.items.count == 0) {
+            self.tableView.isHidden = true
+        } else {
+            self.tableView.isHidden = false
+        }
     }
     
     func setError(error: String?) {

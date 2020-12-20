@@ -13,6 +13,24 @@ extension String {
     }
 }
 
+extension Double {
+    
+    var currencyFormatted: String {
+        let formatter = NumberFormatter()
+        
+        formatter.numberStyle = .currency
+        formatter.currencyDecimalSeparator = ","
+        formatter.currencyGroupingSeparator = "."
+        formatter.currencySymbol = "$"
+        
+        formatter.usesSignificantDigits = true
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 2
+        
+        return "\(formatter.string(from: NSNumber(value: self))!)"
+    }
+}
+
 
 //MARK: - Codenable
 extension JSONDecoder{
