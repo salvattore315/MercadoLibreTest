@@ -71,6 +71,7 @@
 		BE084218258EF6EA0085E21C /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		BE08421D258EF6F60085E21C /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		BE084222258EF8A20085E21C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		BE08422B258F011B0085E21C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C7378258E9DDF003DA983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,7 +216,7 @@
 				BE08420A258EF6A70085E21C /* BuildingScreen */,
 				BE5C73FE258EE7A1003DA983 /* Search */,
 				BE5C73FD258EE797003DA983 /* House */,
-				BE5C73FC258EE790003DA983 /* DetailSearch */,
+				BE5C73FC258EE790003DA983 /* searchDetail */,
 				BE5C73F2258EE5DE003DA983 /* BaseViewController.swift */,
 				BE5C73F7258EE66C003DA983 /* Presenter.swift */,
 				BE5C7430258EEF02003DA983 /* TabBarViewController.swift */,
@@ -278,11 +279,11 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		BE5C73FC258EE790003DA983 /* DetailSearch */ = {
+		BE5C73FC258EE790003DA983 /* searchDetail */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = DetailSearch;
+			path = searchDetail;
 			sourceTree = "<group>";
 		};
 		BE5C73FD258EE797003DA983 /* House */ = {
@@ -605,6 +606,7 @@
 			children = (
 				BE5C737F258E9DDF003DA983 /* Base */,
 				BE5C743D258EF07C003DA983 /* es */,
+				BE08422B258F011B0085E21C /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

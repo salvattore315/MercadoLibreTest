@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "*En Construccion*"; ObjectID = "21n-4h-T1b"; */
+"21n-4h-T1b.text" = "*En Construccion*";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "BDv-If-BOl"; */
+"BDv-If-BOl.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "*Ingresa a tu cuenta*"; ObjectID = "KrK-fE-z7J"; */
+"KrK-fE-z7J.normalTitle" = "*Ingresa a tu cuenta*";
+
+/* Class = "UIButton"; normalTitle = "*Ingresa a tu cuenta*"; ObjectID = "Nye-hL-Llt"; */
+"Nye-hL-Llt.normalTitle" = "*Ingresa a tu cuenta*";
+
+/* Class = "UITabBarItem"; title = "*Favoritos*"; ObjectID = "Oga-JY-bpZ"; */
+"Oga-JY-bpZ.title" = "*Favoritos*";
+
+/* Class = "UITabBarItem"; title = "*Más*"; ObjectID = "PDG-IZ-7ct"; */
+"PDG-IZ-7ct.title" = "*Más*";
+
+/* Class = "UILabel"; text = "*En Construccion*"; ObjectID = "Tcx-H6-ZGG"; */
+"Tcx-H6-ZGG.text" = "*En Construccion*";
+
+/* Class = "UILabel"; text = "*En Construccion*"; ObjectID = "VZ7-HD-FDd"; */
+"VZ7-HD-FDd.text" = "*En Construccion*";
+
+/* Class = "UITabBarItem"; title = "*Mis Compras*"; ObjectID = "ait-in-TrN"; */
+"ait-in-TrN.title" = "*Mis Compras*";
+
+/* Class = "UILabel"; text = "*En Construccion*"; ObjectID = "bpZ-uv-0By"; */
+"bpZ-uv-0By.text" = "*En Construccion*";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "dRV-lL-MPY"; */
+"dRV-lL-MPY.title" = "Title";
+
+/* Class = "UITabBarItem"; title = "*House*"; ObjectID = "faY-iM-gEg"; */
+"faY-iM-gEg.title" = "*House*";
+
+/* Class = "UITabBarItem"; title = "*Notificaciones*"; ObjectID = "txr-RO-X7r"; */
+"txr-RO-X7r.title" = "*Notificaciones*";
+
+/* Class = "UIButton"; normalTitle = "*Ingresa a tu cuenta*"; ObjectID = "zgV-vy-Wf6"; */
+"zgV-vy-Wf6.normalTitle" = "*Ingresa a tu cuenta*";
