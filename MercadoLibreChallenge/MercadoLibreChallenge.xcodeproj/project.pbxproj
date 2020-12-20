@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7378258E9DDF003DA983 /* AppDelegate.swift */; };
 		BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */; };
-		BE5C737D258E9DDF003DA983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C737C258E9DDF003DA983 /* ViewController.swift */; };
 		BE5C7380258E9DDF003DA983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C737E258E9DDF003DA983 /* Main.storyboard */; };
 		BE5C7383258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7381258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld */; };
 		BE5C7385258E9DE1003DA983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5C7384258E9DE1003DA983 /* Assets.xcassets */; };
@@ -39,7 +38,6 @@
 		BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C7378258E9DDF003DA983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE5C737C258E9DDF003DA983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE5C737F258E9DDF003DA983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE5C7382258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MercadoLibreChallenge.xcdatamodel; sourceTree = "<group>"; };
 		BE5C7384258E9DE1003DA983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,14 +99,12 @@
 		BE5C7377258E9DDF003DA983 /* MercadoLibreChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				BE5C7378258E9DDF003DA983 /* AppDelegate.swift */,
-				BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */,
-				BE5C737C258E9DDF003DA983 /* ViewController.swift */,
-				BE5C737E258E9DDF003DA983 /* Main.storyboard */,
-				BE5C7384258E9DE1003DA983 /* Assets.xcassets */,
-				BE5C7386258E9DE1003DA983 /* LaunchScreen.storyboard */,
+				BE5C73AE258E9E70003DA983 /* Configuration Controllers */,
+				BE5C73AF258E9E7C003DA983 /* Model */,
+				BE5C73B0258E9EAC003DA983 /* Service */,
+				BE5C73B1258E9EB6003DA983 /* Utils */,
+				BE5C73B2258E9EC8003DA983 /* Resources */,
 				BE5C7389258E9DE1003DA983 /* Info.plist */,
-				BE5C7381258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld */,
 			);
 			path = MercadoLibreChallenge;
 			sourceTree = "<group>";
@@ -129,6 +125,63 @@
 				BE5C739F258E9DE1003DA983 /* Info.plist */,
 			);
 			path = MercadoLibreChallengeUITests;
+			sourceTree = "<group>";
+		};
+		BE5C73AE258E9E70003DA983 /* Configuration Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Configuration Controllers";
+			sourceTree = "<group>";
+		};
+		BE5C73AF258E9E7C003DA983 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE5C73B0258E9EAC003DA983 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BE5C73B1258E9EB6003DA983 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BE5C73B2258E9EC8003DA983 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C73B4258E9F0D003DA983 /* Aplications */,
+				BE5C73B3258E9F06003DA983 /* Storyboards */,
+				BE5C7381258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld */,
+				BE5C7384258E9DE1003DA983 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE5C73B3258E9F06003DA983 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C737E258E9DDF003DA983 /* Main.storyboard */,
+				BE5C7386258E9DE1003DA983 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BE5C73B4258E9F0D003DA983 /* Aplications */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C7378258E9DDF003DA983 /* AppDelegate.swift */,
+				BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */,
+			);
+			path = Aplications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +314,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5C737D258E9DDF003DA983 /* ViewController.swift in Sources */,
 				BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */,
 				BE5C7383258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld in Sources */,
 				BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */,
