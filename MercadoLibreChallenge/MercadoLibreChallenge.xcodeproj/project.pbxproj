@@ -21,6 +21,7 @@
 		BE5C73F3258EE5DE003DA983 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C73F2258EE5DE003DA983 /* BaseViewController.swift */; };
 		BE5C73F8258EE66C003DA983 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C73F7258EE66C003DA983 /* Presenter.swift */; };
 		BE5C7431258EEF02003DA983 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7430258EEF02003DA983 /* TabBarViewController.swift */; };
+		BE5C743A258EF02A003DA983 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE5C743C258EF02A003DA983 /* Localizable.strings */; };
 		BF6D7D06A2FCD54740838CD6 /* Pods_MercadoLibreChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A772EAC7E34C0F5C376325 /* Pods_MercadoLibreChallenge.framework */; };
 		CD610639F3A96219EAD10CE2 /* Pods_MercadoLibreChallenge_MercadoLibreChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F92DA142EF71DEB082A9AA /* Pods_MercadoLibreChallenge_MercadoLibreChallengeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,10 @@
 		BE5C73F2258EE5DE003DA983 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BE5C73F7258EE66C003DA983 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		BE5C7430258EEF02003DA983 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BE5C743B258EF02A003DA983 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE5C743D258EF07C003DA983 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		BE5C743E258EF07D003DA983 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BE5C743F258EF07D003DA983 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C43F4B37F500691D6A657CDB /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig"; sourceTree = "<group>"; };
 		DE9B1D1D193D1CD662A141E8 /* Pods-MercadoLibreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge/Pods-MercadoLibreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +219,7 @@
 				BE5C7381258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld */,
 				BE5C7384258E9DE1003DA983 /* Assets.xcassets */,
 				BE5C73E2258EE3FB003DA983 /* GlobalConstant.swift */,
+				BE5C743C258EF02A003DA983 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = BE5C736C258E9DDE003DA983;
 			productRefGroup = BE5C7376258E9DDF003DA983 /* Products */;
@@ -384,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5C7388258E9DE1003DA983 /* LaunchScreen.storyboard in Resources */,
+				BE5C743A258EF02A003DA983 /* Localizable.strings in Resources */,
 				BE5C7385258E9DE1003DA983 /* Assets.xcassets in Resources */,
 				BE5C7380258E9DDF003DA983 /* Main.storyboard in Resources */,
 			);
@@ -560,6 +568,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE5C737F258E9DDF003DA983 /* Base */,
+				BE5C743D258EF07C003DA983 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -568,8 +577,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE5C7387258E9DE1003DA983 /* Base */,
+				BE5C743E258EF07D003DA983 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BE5C743C258EF02A003DA983 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE5C743B258EF02A003DA983 /* en */,
+				BE5C743F258EF07D003DA983 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -579,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -640,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
