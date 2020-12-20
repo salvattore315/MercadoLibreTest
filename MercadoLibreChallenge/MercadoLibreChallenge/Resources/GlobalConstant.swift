@@ -66,7 +66,17 @@ struct GlobalConstants {
     }
     
     //MARK: - API SERVICES
-    struct nameServices {
+    struct NameServices {
+    }
+    
+    //MARK: - Colors
+    struct Colors {
+        static let yellowMercadoLibre: UIColor = #colorLiteral(red: 1, green: 0.9450980392, blue: 0.3490196078, alpha: 1)
+    }
+    
+    //MARK: - Segue
+    struct Segues {
+        static let goToSearch = "goToSearch"
     }
     
 }

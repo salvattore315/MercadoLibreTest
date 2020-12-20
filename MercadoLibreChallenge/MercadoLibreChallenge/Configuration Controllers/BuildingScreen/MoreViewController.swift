@@ -28,7 +28,6 @@ class MoreViewController: BaseViewController {
     override func setup() {
         super.setup()
         navigationItem.title = "more".localized
-        tabBarItem.title = "Hola"
         buildingLabel.text = "inConstruction".localized
     }
 }

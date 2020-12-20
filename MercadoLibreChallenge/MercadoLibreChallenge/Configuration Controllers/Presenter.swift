@@ -7,7 +7,12 @@
 
 import Foundation
 
-protocol ServiceTableView: NSObjectProtocol {
+protocol BaseServiceView: NSObjectProtocol {
+    func startCallingService()
+    func finishCallService()
+    func setResponse(objectCodable: Any)
+    func setEmpty()
+    func setError(error: String?)
 }
 
 class Presenter {
