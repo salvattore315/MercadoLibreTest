@@ -13,6 +13,10 @@
 "notifications" = "Notifications";
 "more" = "More";
 
+//House
+"searchBarMeli" = "Search in Mercado Libre";
+
+
 //Building Screens
 "inConstruction" = "In Construction";
 "loginAccount" = "Log in to your account";

@@ -15,6 +15,12 @@
 		BE084219258EF6EA0085E21C /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084218258EF6EA0085E21C /* NotificationsViewController.swift */; };
 		BE08421E258EF6F60085E21C /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08421D258EF6F60085E21C /* MoreViewController.swift */; };
 		BE084223258EF8A20085E21C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084222258EF8A20085E21C /* Helper.swift */; };
+		BE084233258F8F950085E21C /* HousePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084232258F8F950085E21C /* HousePresenter.swift */; };
+		BE084238258FBB240085E21C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084237258FBB240085E21C /* SearchViewController.swift */; };
+		BE08423D258FBB340085E21C /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08423C258FBB340085E21C /* SearchPresenter.swift */; };
+		BE084242258FBB500085E21C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084241258FBB500085E21C /* ItemTableViewCell.swift */; };
+		BE084247258FBB710085E21C /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084246258FBB710085E21C /* SearchDetailViewController.swift */; };
+		BE08424C258FBBAD0085E21C /* SearchDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08424B258FBBAD0085E21C /* SearchDetailPresenter.swift */; };
 		BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7378258E9DDF003DA983 /* AppDelegate.swift */; };
 		BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */; };
 		BE5C7380258E9DDF003DA983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C737E258E9DDF003DA983 /* Main.storyboard */; };
@@ -72,6 +78,12 @@
 		BE08421D258EF6F60085E21C /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		BE084222258EF8A20085E21C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		BE08422B258F011B0085E21C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		BE084232258F8F950085E21C /* HousePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePresenter.swift; sourceTree = "<group>"; };
+		BE084237258FBB240085E21C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BE08423C258FBB340085E21C /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		BE084241258FBB500085E21C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		BE084246258FBB710085E21C /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		BE08424B258FBBAD0085E21C /* SearchDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailPresenter.swift; sourceTree = "<group>"; };
 		BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C7378258E9DDF003DA983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,8 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				BE08420A258EF6A70085E21C /* BuildingScreen */,
-				BE5C73FE258EE7A1003DA983 /* Search */,
 				BE5C73FD258EE797003DA983 /* House */,
+				BE5C73FE258EE7A1003DA983 /* Search */,
 				BE5C73FC258EE790003DA983 /* searchDetail */,
 				BE5C73F2258EE5DE003DA983 /* BaseViewController.swift */,
 				BE5C73F7258EE66C003DA983 /* Presenter.swift */,
@@ -282,6 +294,8 @@
 		BE5C73FC258EE790003DA983 /* searchDetail */ = {
 			isa = PBXGroup;
 			children = (
+				BE084246258FBB710085E21C /* SearchDetailViewController.swift */,
+				BE08424B258FBBAD0085E21C /* SearchDetailPresenter.swift */,
 			);
 			path = searchDetail;
 			sourceTree = "<group>";
@@ -290,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				BE084205258EF4E80085E21C /* HouseViewController.swift */,
+				BE084232258F8F950085E21C /* HousePresenter.swift */,
 			);
 			path = House;
 			sourceTree = "<group>";
@@ -297,6 +312,9 @@
 		BE5C73FE258EE7A1003DA983 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				BE084237258FBB240085E21C /* SearchViewController.swift */,
+				BE08423C258FBB340085E21C /* SearchPresenter.swift */,
+				BE084241258FBB500085E21C /* ItemTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -553,7 +571,12 @@
 			files = (
 				BE084201258EF49D0085E21C /* Extension.swift in Sources */,
 				BE5C7431258EEF02003DA983 /* TabBarViewController.swift in Sources */,
+				BE08423D258FBB340085E21C /* SearchPresenter.swift in Sources */,
 				BE084223258EF8A20085E21C /* Helper.swift in Sources */,
+				BE084242258FBB500085E21C /* ItemTableViewCell.swift in Sources */,
+				BE084238258FBB240085E21C /* SearchViewController.swift in Sources */,
+				BE08424C258FBBAD0085E21C /* SearchDetailPresenter.swift in Sources */,
+				BE084247258FBB710085E21C /* SearchDetailViewController.swift in Sources */,
 				BE084214258EF6D60085E21C /* MyShoppingViewController.swift in Sources */,
 				BE084219258EF6EA0085E21C /* NotificationsViewController.swift in Sources */,
 				BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */,
@@ -562,6 +585,7 @@
 				BE08421E258EF6F60085E21C /* MoreViewController.swift in Sources */,
 				BE084206258EF4E80085E21C /* HouseViewController.swift in Sources */,
 				BE08420C258EF6B30085E21C /* FavoritesViewController.swift in Sources */,
+				BE084233258F8F950085E21C /* HousePresenter.swift in Sources */,
 				BE5C7383258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld in Sources */,
 				BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */,
 				BE5C73DB258EE389003DA983 /* ShellWebService.swift in Sources */,
