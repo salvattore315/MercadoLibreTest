@@ -42,13 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E157243F781ED134DE82AD /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.development.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.development.xcconfig"; sourceTree = "<group>"; };
 		22779A15791321CB4CD31765 /* Pods-MercadoLibreChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallengeTests/Pods-MercadoLibreChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A54432DA4B3810EF9EE970E /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		322CBDFE0D9B7991D7A3DE02 /* Pods-MercadoLibreChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge.release.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge/Pods-MercadoLibreChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		3FD0D5D3D69B04583EDBF194 /* Pods-MercadoLibreChallenge.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge.development.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge/Pods-MercadoLibreChallenge.development.xcconfig"; sourceTree = "<group>"; };
 		4C24B23D4CCCD7FC424E2B5E /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		504F2B699D2609ED088BE644 /* Pods-MercadoLibreChallengeTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallengeTests.production.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallengeTests/Pods-MercadoLibreChallengeTests.production.xcconfig"; sourceTree = "<group>"; };
 		5EE6C5E3E29E47BC2845F10C /* Pods-MercadoLibreChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallengeTests/Pods-MercadoLibreChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		68EF59B720D83FB74A9785C1 /* Pods_MercadoLibreChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLibreChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D19DFEB760E808962FD692 /* Pods-MercadoLibreChallengeTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallengeTests.development.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallengeTests/Pods-MercadoLibreChallengeTests.development.xcconfig"; sourceTree = "<group>"; };
 		A4F92DA142EF71DEB082A9AA /* Pods_MercadoLibreChallenge_MercadoLibreChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLibreChallenge_MercadoLibreChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C942E6D566753DE25A07D1 /* Pods-MercadoLibreChallenge.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge.production.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge/Pods-MercadoLibreChallenge.production.xcconfig"; sourceTree = "<group>"; };
 		B5A772EAC7E34C0F5C376325 /* Pods_MercadoLibreChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLibreChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C7378258E9DDF003DA983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 		BE5C73E2258EE3FB003DA983 /* GlobalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
 		BE5C73F2258EE5DE003DA983 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BE5C73F7258EE66C003DA983 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		C43F4B37F500691D6A657CDB /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests/Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig"; sourceTree = "<group>"; };
 		DE9B1D1D193D1CD662A141E8 /* Pods-MercadoLibreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge/Pods-MercadoLibreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,12 @@
 				4C24B23D4CCCD7FC424E2B5E /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.release.xcconfig */,
 				22779A15791321CB4CD31765 /* Pods-MercadoLibreChallengeTests.debug.xcconfig */,
 				5EE6C5E3E29E47BC2845F10C /* Pods-MercadoLibreChallengeTests.release.xcconfig */,
+				3FD0D5D3D69B04583EDBF194 /* Pods-MercadoLibreChallenge.development.xcconfig */,
+				B3C942E6D566753DE25A07D1 /* Pods-MercadoLibreChallenge.production.xcconfig */,
+				03E157243F781ED134DE82AD /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.development.xcconfig */,
+				C43F4B37F500691D6A657CDB /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig */,
+				73D19DFEB760E808962FD692 /* Pods-MercadoLibreChallengeTests.development.xcconfig */,
+				504F2B699D2609ED088BE644 /* Pods-MercadoLibreChallengeTests.production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -677,7 +689,7 @@
 		};
 		BE5C73A3258E9DE1003DA983 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE9B1D1D193D1CD662A141E8 /* Pods-MercadoLibreChallenge.debug.xcconfig */;
+			baseConfigurationReference = 3FD0D5D3D69B04583EDBF194 /* Pods-MercadoLibreChallenge.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -696,7 +708,7 @@
 		};
 		BE5C73A4258E9DE1003DA983 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 322CBDFE0D9B7991D7A3DE02 /* Pods-MercadoLibreChallenge.release.xcconfig */;
+			baseConfigurationReference = B3C942E6D566753DE25A07D1 /* Pods-MercadoLibreChallenge.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -715,7 +727,7 @@
 		};
 		BE5C73A6258E9DE1003DA983 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22779A15791321CB4CD31765 /* Pods-MercadoLibreChallengeTests.debug.xcconfig */;
+			baseConfigurationReference = 73D19DFEB760E808962FD692 /* Pods-MercadoLibreChallengeTests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -737,7 +749,7 @@
 		};
 		BE5C73A7258E9DE1003DA983 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EE6C5E3E29E47BC2845F10C /* Pods-MercadoLibreChallengeTests.release.xcconfig */;
+			baseConfigurationReference = 504F2B699D2609ED088BE644 /* Pods-MercadoLibreChallengeTests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -759,7 +771,7 @@
 		};
 		BE5C73A9258E9DE1003DA983 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A54432DA4B3810EF9EE970E /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.debug.xcconfig */;
+			baseConfigurationReference = 03E157243F781ED134DE82AD /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -779,7 +791,7 @@
 		};
 		BE5C73AA258E9DE1003DA983 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C24B23D4CCCD7FC424E2B5E /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.release.xcconfig */;
+			baseConfigurationReference = C43F4B37F500691D6A657CDB /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
