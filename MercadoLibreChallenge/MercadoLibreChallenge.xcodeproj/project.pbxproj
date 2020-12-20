@@ -21,6 +21,9 @@
 		BE084242258FBB500085E21C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084241258FBB500085E21C /* ItemTableViewCell.swift */; };
 		BE084247258FBB710085E21C /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084246258FBB710085E21C /* SearchDetailViewController.swift */; };
 		BE08424C258FBBAD0085E21C /* SearchDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08424B258FBBAD0085E21C /* SearchDetailPresenter.swift */; };
+		BE084257258FD4FE0085E21C /* JsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084256258FD4FE0085E21C /* JsonResponse.swift */; };
+		BE08425C258FD56D0085E21C /* Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08425B258FD56D0085E21C /* Paging.swift */; };
+		BE084261258FD68A0085E21C /* ItemSearched.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084260258FD68A0085E21C /* ItemSearched.swift */; };
 		BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7378258E9DDF003DA983 /* AppDelegate.swift */; };
 		BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */; };
 		BE5C7380258E9DDF003DA983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C737E258E9DDF003DA983 /* Main.storyboard */; };
@@ -84,6 +87,9 @@
 		BE084241258FBB500085E21C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		BE084246258FBB710085E21C /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		BE08424B258FBBAD0085E21C /* SearchDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailPresenter.swift; sourceTree = "<group>"; };
+		BE084256258FD4FE0085E21C /* JsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonResponse.swift; sourceTree = "<group>"; };
+		BE08425B258FD56D0085E21C /* Paging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paging.swift; sourceTree = "<group>"; };
+		BE084260258FD68A0085E21C /* ItemSearched.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearched.swift; sourceTree = "<group>"; };
 		BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C7378258E9DDF003DA983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +245,9 @@
 		BE5C73AF258E9E7C003DA983 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE084256258FD4FE0085E21C /* JsonResponse.swift */,
+				BE08425B258FD56D0085E21C /* Paging.swift */,
+				BE084260258FD68A0085E21C /* ItemSearched.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -575,6 +584,8 @@
 				BE084223258EF8A20085E21C /* Helper.swift in Sources */,
 				BE084242258FBB500085E21C /* ItemTableViewCell.swift in Sources */,
 				BE084238258FBB240085E21C /* SearchViewController.swift in Sources */,
+				BE08425C258FD56D0085E21C /* Paging.swift in Sources */,
+				BE084257258FD4FE0085E21C /* JsonResponse.swift in Sources */,
 				BE08424C258FBBAD0085E21C /* SearchDetailPresenter.swift in Sources */,
 				BE084247258FBB710085E21C /* SearchDetailViewController.swift in Sources */,
 				BE084214258EF6D60085E21C /* MyShoppingViewController.swift in Sources */,
@@ -583,6 +594,7 @@
 				BE5C73F8258EE66C003DA983 /* Presenter.swift in Sources */,
 				BE5C73E3258EE3FB003DA983 /* GlobalConstant.swift in Sources */,
 				BE08421E258EF6F60085E21C /* MoreViewController.swift in Sources */,
+				BE084261258FD68A0085E21C /* ItemSearched.swift in Sources */,
 				BE084206258EF4E80085E21C /* HouseViewController.swift in Sources */,
 				BE08420C258EF6B30085E21C /* FavoritesViewController.swift in Sources */,
 				BE084233258F8F950085E21C /* HousePresenter.swift in Sources */,

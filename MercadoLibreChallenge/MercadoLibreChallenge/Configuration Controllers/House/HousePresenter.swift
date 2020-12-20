@@ -31,7 +31,7 @@ class HousePresenter: Presenter {
     //MARK: - Service
     public func getPostsService() {
         self.searchView?.startCallingService()
-        service.callServiceObject(parameters: nil, service: "") { [self] (data, error) in
+        service.callServiceObject(parameters: nil, service: "", queryLink: nil) { [self] (data, error) in
             if error != nil {
                 self.searchView?.setError(error: "")
             }

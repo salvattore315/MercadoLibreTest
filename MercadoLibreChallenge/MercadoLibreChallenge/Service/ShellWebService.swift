@@ -11,17 +11,24 @@ import Alamofire
 protocol Service{
     func callServiceObject(parameters:[String: AnyObject]?,
                            service:String,
+                           queryLink: Any?,
                            withCompletionBlock: @escaping  ((Data?, _ error: NSError?) -> Void))
 }
 
 class ShellWebService : Service {
 
     public func selectWebService(service:String,
-                                 params:[String:AnyObject]?, returnService: ((_ method: HTTPMethod,
+                                 params:[String:AnyObject]?, queryLink: Any?, returnService: ((_ method: HTTPMethod,
                                                                                               _ serviceUrl: String?,
                                                                                               _ typeEncoding: ParameterEncoding) -> Void)){
         
         switch service {
+        case GlobalConstants.NameServices.searchItems:
+            var itemSelected = ""
+            if let item = queryLink as? String {
+                    itemSelected = item
+            }
+            returnService(.get, GlobalConstants.Endpoints.searchItems(itemSelected: itemSelected), URLEncoding())
         default:
             break
         }
@@ -45,18 +52,16 @@ class ShellWebService : Service {
     
     public func callServiceObject(parameters:[String: AnyObject]?,
                                   service:String,
+                                  queryLink: Any?,
                                   withCompletionBlock: @escaping ((Data?, _ error: NSError?) -> Void)){
         
-        selectWebService(service: service, params:parameters,  returnService: { (method, url, typeEncoding) -> Void in
+        selectWebService(service: service, params:parameters, queryLink: queryLink,  returnService: { (method, url, typeEncoding) -> Void in
             
             let headers = settingHeader()
             let parametersEdited = self.editParameters(parameters: parameters)
             
             print("----------API SERVICE PARAMETERS-------------")
             print(url ?? "nil")
-            if url?.lowercased().range(of:"login") == nil{
-                print("\(parametersEdited ?? ["parameterEdited": "nil" as AnyObject])")
-            }
             print("\(headers ?? ["header" : "nil"])")
             print("----------END API SERVICE PARAMETERS----------")
             
@@ -65,15 +70,38 @@ class ShellWebService : Service {
                        encoding: typeEncoding,
                        headers: headers).responseJSON { (response) in
                         
-                if(response.data != nil) {
-                    withCompletionBlock(response.data, nil)
-                } else {
-                    let error = NSError(domain: "",
-                                        code: 00,
-                                        userInfo: ["message": "something bad"])
-                    withCompletionBlock(nil, error)
-                }
-            }
+                        switch response.result{
+                        case .success:
+                            let code = response.response!.statusCode
+                            
+                            if code <= 299{
+                                withCompletionBlock(response.data,nil)
+                            }else{
+                                let error:NSError = NSError(domain: "", code: code, userInfo: ["message":"", "title" : ""])
+                                withCompletionBlock(nil,error)
+                            }
+                            break
+                            
+                        case .failure(let error):
+                            var messageResponse = "serverError".localized
+                            let code : Int?
+                            if response.response?.statusCode != nil{
+                                code = response.response!.statusCode
+                            }else{
+                                if let err = error as? URLError, err.code  == URLError.Code.notConnectedToInternet{
+                                    messageResponse = "noInternetConection".localized
+                                }
+                                code = 500
+                            }
+                            
+                            print("error")
+                            
+                            let error:NSError = NSError(domain: "", code: code!, userInfo: ["message": messageResponse])
+                            
+                            withCompletionBlock(nil,error)
+                            break
+                        }//Switch
+                       }
         })//SelectWebService
     }//Function
 }
