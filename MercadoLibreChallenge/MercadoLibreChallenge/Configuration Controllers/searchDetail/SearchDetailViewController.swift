@@ -9,6 +9,8 @@ import UIKit
 
 class SearchDetailViewController: BaseViewController {
 
+    public var itemSelected: ItemSearched?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -9,26 +9,21 @@ import Foundation
 import Alamofire
 
 protocol Service{
-    func callServiceObject(parameters:[String: AnyObject]?,
+    func callServiceObject(parameters: [String : AnyObject]?,
                            service:String,
-                           queryLink: Any?,
                            withCompletionBlock: @escaping  ((Data?, _ error: NSError?) -> Void))
 }
 
 class ShellWebService : Service {
 
     public func selectWebService(service:String,
-                                 params:[String:AnyObject]?, queryLink: Any?, returnService: ((_ method: HTTPMethod,
+                                 params:[String:AnyObject]?, returnService: ((_ method: HTTPMethod,
                                                                                               _ serviceUrl: String?,
                                                                                               _ typeEncoding: ParameterEncoding) -> Void)){
         
         switch service {
         case GlobalConstants.NameServices.searchItems:
-            var itemSelected = ""
-            if let item = queryLink as? String {
-                    itemSelected = item
-            }
-            returnService(.get, GlobalConstants.Endpoints.searchItems(itemSelected: itemSelected), URLEncoding())
+            returnService(.get, GlobalConstants.Endpoints.searchItems, URLEncoding())
         default:
             break
         }
@@ -52,10 +47,9 @@ class ShellWebService : Service {
     
     public func callServiceObject(parameters:[String: AnyObject]?,
                                   service:String,
-                                  queryLink: Any?,
                                   withCompletionBlock: @escaping ((Data?, _ error: NSError?) -> Void)){
         
-        selectWebService(service: service, params:parameters, queryLink: queryLink,  returnService: { (method, url, typeEncoding) -> Void in
+        selectWebService(service: service, params:parameters,  returnService: { (method, url, typeEncoding) -> Void in
             
             let headers = settingHeader()
             let parametersEdited = self.editParameters(parameters: parameters)

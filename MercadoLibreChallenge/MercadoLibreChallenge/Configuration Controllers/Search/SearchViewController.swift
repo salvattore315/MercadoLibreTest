@@ -14,9 +14,13 @@ class SearchViewController: BaseViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var magnifyingglassImageView: UIImageView!
+    @IBOutlet weak var noFindLabel: UILabel!
+    @IBOutlet weak var searchOtherLabel: UILabel!
     
     public var itemSearched: String = ""
-    var items: [ItemSearched] = []
+    private var items: [ItemSearched] = []
+    private var itemSelected: ItemSearched?
     private let presenter = SearchPresenter()
     
     //MARK: - Lifecycle
@@ -36,12 +40,25 @@ class SearchViewController: BaseViewController {
         searchBar.backgroundImage = UIImage()
         searchBar.searchTextField.backgroundColor = .white
         searchBar.placeholder = "searchBarMeli".localized
+        searchBar.searchTextField.font = .systemFont(ofSize: 15, weight: .light)
+        searchBar.searchTextField.textColor = .systemGray2
         searchBar.text = itemSearched
+        
+        noFindLabel.text = "notFind".localized
+        searchOtherLabel.text = "searchAnother".localized
     }
     
     //MARK: - Actions
     @IBAction func backPress(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    //MARK: - Segues
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is SearchDetailViewController {
+            let vc = segue.destination as? SearchDetailViewController
+            vc?.itemSelected = itemSelected
+        }
     }
 }
 
@@ -62,6 +79,9 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        self.itemSelected = item
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.performSegue(withIdentifier: GlobalConstants.Segues.goToSearchDetail, sender: nil)
     }
 }
@@ -84,14 +104,20 @@ extension SearchViewController: BaseServiceView {
     }
     
     func setEmpty() {
-        if(self.items.count == 0) {
-            self.tableView.isHidden = true
+        if(items.count == 0) {
+            tableView.isHidden = true
+            magnifyingglassImageView.isHidden = false
+            noFindLabel.isHidden = false
+            searchOtherLabel.isHidden = false
         } else {
-            self.tableView.isHidden = false
+            tableView.isHidden = false
+            magnifyingglassImageView.isHidden = true
+            noFindLabel.isHidden = true
+            searchOtherLabel.isHidden = true
         }
     }
     
     func setError(error: String?) {
-        
+        setEmpty()
     }
 }

@@ -31,7 +31,7 @@ class SearchPresenter: Presenter {
     //MARK: - Service
     public func getItemsService(itemSearched: String) {
         self.searchView?.startCallingService()
-        service.callServiceObject(parameters: nil, service: GlobalConstants.NameServices.searchItems, queryLink: itemSearched) { [self] (data, error) in
+        service.callServiceObject(parameters: ["q": itemSearched as AnyObject], service: GlobalConstants.NameServices.searchItems) { [self] (data, error) in
             if error != nil {
                 searchView?.setError(error: "")
             }

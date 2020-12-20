@@ -60,9 +60,8 @@ struct GlobalConstants {
     //MARK: ENDPOINTS
     struct Endpoints {
         
-        static func searchItems(itemSelected: String) -> String {
-            return baseUrl + "/sites/MCO/search?q=" + itemSelected
-        }
+        static let searchItems = baseUrl + "/sites/MCO/search"
+        
     }
     
     //MARK: Headers

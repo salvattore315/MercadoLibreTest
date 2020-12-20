@@ -18,10 +18,12 @@
 
 //MARK: - SearchedItem
 "freeShipping" = "Free Shipping";
+"notFind" = "No posts found";
+"searchAnother" = "Check that the word is well written. You can also try with less or more general terms.";
 
 //MARK: - Building Screens
 "inConstruction" = "In Construction";
-"loginAccount" = "Log in to your account";
+"loginAccount" = "Log-in to your account";
 "seeFavorites" = "Do you want to see your favorites?";
 "seeMyShopping" = "Do you want to see your purchases?";
 "seeNotifications" = "Do you want to see your notifications?";
