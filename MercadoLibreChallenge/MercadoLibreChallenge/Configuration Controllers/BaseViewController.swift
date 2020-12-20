@@ -8,7 +8,18 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setup()
+    }
+    
+    //MARK: - Setup
+    internal func setup() {
+        
     }
 }

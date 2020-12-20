@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1ED85D28ACC3189321946195 /* Pods_MercadoLibreChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EF59B720D83FB74A9785C1 /* Pods_MercadoLibreChallengeTests.framework */; };
+		BE084201258EF49D0085E21C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084200258EF49D0085E21C /* Extension.swift */; };
+		BE084206258EF4E80085E21C /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084205258EF4E80085E21C /* HouseViewController.swift */; };
+		BE08420C258EF6B30085E21C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08420B258EF6B30085E21C /* FavoritesViewController.swift */; };
+		BE084214258EF6D60085E21C /* MyShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084213258EF6D60085E21C /* MyShoppingViewController.swift */; };
+		BE084219258EF6EA0085E21C /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084218258EF6EA0085E21C /* NotificationsViewController.swift */; };
+		BE08421E258EF6F60085E21C /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08421D258EF6F60085E21C /* MoreViewController.swift */; };
+		BE084223258EF8A20085E21C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE084222258EF8A20085E21C /* Helper.swift */; };
 		BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C7378258E9DDF003DA983 /* AppDelegate.swift */; };
 		BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */; };
 		BE5C7380258E9DDF003DA983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5C737E258E9DDF003DA983 /* Main.storyboard */; };
@@ -57,6 +64,13 @@
 		A4F92DA142EF71DEB082A9AA /* Pods_MercadoLibreChallenge_MercadoLibreChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLibreChallenge_MercadoLibreChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C942E6D566753DE25A07D1 /* Pods-MercadoLibreChallenge.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibreChallenge.production.xcconfig"; path = "Target Support Files/Pods-MercadoLibreChallenge/Pods-MercadoLibreChallenge.production.xcconfig"; sourceTree = "<group>"; };
 		B5A772EAC7E34C0F5C376325 /* Pods_MercadoLibreChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLibreChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE084200258EF49D0085E21C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		BE084205258EF4E80085E21C /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		BE08420B258EF6B30085E21C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		BE084213258EF6D60085E21C /* MyShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyShoppingViewController.swift; sourceTree = "<group>"; };
+		BE084218258EF6EA0085E21C /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		BE08421D258EF6F60085E21C /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		BE084222258EF8A20085E21C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		BE5C7375258E9DDF003DA983 /* MercadoLibreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C7378258E9DDF003DA983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5C737A258E9DDF003DA983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +145,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BE08420A258EF6A70085E21C /* BuildingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BE08420B258EF6B30085E21C /* FavoritesViewController.swift */,
+				BE084213258EF6D60085E21C /* MyShoppingViewController.swift */,
+				BE084218258EF6EA0085E21C /* NotificationsViewController.swift */,
+				BE08421D258EF6F60085E21C /* MoreViewController.swift */,
+			);
+			path = BuildingScreen;
+			sourceTree = "<group>";
+		};
 		BE5C736C258E9DDE003DA983 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +212,7 @@
 		BE5C73AE258E9E70003DA983 /* Configuration Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BE08420A258EF6A70085E21C /* BuildingScreen */,
 				BE5C73FE258EE7A1003DA983 /* Search */,
 				BE5C73FD258EE797003DA983 /* House */,
 				BE5C73FC258EE790003DA983 /* DetailSearch */,
@@ -207,6 +233,8 @@
 		BE5C73B1258E9EB6003DA983 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BE084200258EF49D0085E21C /* Extension.swift */,
+				BE084222258EF8A20085E21C /* Helper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,6 +288,7 @@
 		BE5C73FD258EE797003DA983 /* House */ = {
 			isa = PBXGroup;
 			children = (
+				BE084205258EF4E80085E21C /* HouseViewController.swift */,
 			);
 			path = House;
 			sourceTree = "<group>";
@@ -521,10 +550,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE084201258EF49D0085E21C /* Extension.swift in Sources */,
 				BE5C7431258EEF02003DA983 /* TabBarViewController.swift in Sources */,
+				BE084223258EF8A20085E21C /* Helper.swift in Sources */,
+				BE084214258EF6D60085E21C /* MyShoppingViewController.swift in Sources */,
+				BE084219258EF6EA0085E21C /* NotificationsViewController.swift in Sources */,
 				BE5C7379258E9DDF003DA983 /* AppDelegate.swift in Sources */,
 				BE5C73F8258EE66C003DA983 /* Presenter.swift in Sources */,
 				BE5C73E3258EE3FB003DA983 /* GlobalConstant.swift in Sources */,
+				BE08421E258EF6F60085E21C /* MoreViewController.swift in Sources */,
+				BE084206258EF4E80085E21C /* HouseViewController.swift in Sources */,
+				BE08420C258EF6B30085E21C /* FavoritesViewController.swift in Sources */,
 				BE5C7383258E9DDF003DA983 /* MercadoLibreChallenge.xcdatamodeld in Sources */,
 				BE5C737B258E9DDF003DA983 /* SceneDelegate.swift in Sources */,
 				BE5C73DB258EE389003DA983 /* ShellWebService.swift in Sources */,

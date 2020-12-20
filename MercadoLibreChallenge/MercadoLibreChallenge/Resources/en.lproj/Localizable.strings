@@ -7,7 +7,6 @@
 */
 
 //TabBar
-
 "start" = "Start";
 "favorites" = "Favorites";
 "myShopping" = "My Shopping";
@@ -16,3 +15,7 @@
 
 //Building Screens
 "inConstruction" = "In Construction";
+"loginAccount" = "Log in to your account";
+"seeFavorites" = "Do you want to see your favorites?";
+"seeMyShopping" = "Do you want to see your purchases?";
+"seeNotifications" = "Do you want to see your notifications?";

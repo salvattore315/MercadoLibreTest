@@ -5,3 +5,13 @@
   Created by Salvador Martinez on 19/12/20.
   
 */
+
+//TabBar
+"start" = "Start";
+"favorites" = "Favorites";
+"myShopping" = "My Shopping";
+"notifications" = "Notifications";
+"more" = "More";
+
+//Building Screens
+"inConstruction" = "In Construction";
