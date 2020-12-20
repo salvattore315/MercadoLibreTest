@@ -29,22 +29,19 @@ class SearchPresenter: Presenter {
     //MARK: - UserDefault
     
     //MARK: - Service
-    public func getPostsService() {
+    public func getItemsService(itemSearched: String) {
         self.searchView?.startCallingService()
-        service.callServiceObject(parameters: nil, service: "") { [self] (data, error) in
+        service.callServiceObject(parameters: nil, service: GlobalConstants.NameServices.searchItems, queryLink: itemSearched) { [self] (data, error) in
             if error != nil {
-                self.searchView?.setError(error: "")
+                searchView?.setError(error: "")
             }
             
-            if data != nil {
-//                if let posts: [Post] = JSONDecoder().decodeResponse(from: data){
-//                    print(posts)
-//                    saveAllPostInRealm(posts: posts)
-//                    getAllPostInRealm()
-//                    self.postView?.finishCallService()
-//                } else {
-//                    self.postView?.setError(error: "")
-//                }
+            let responseParsed = try? jsonResponse<[ItemSearched]>.decode(data: data)
+            if(responseParsed?.results != nil) {
+                searchView?.setResponse(objectCodable: (responseParsed?.results ?? nil)!)
+                searchView?.finishCallService()
+            } else {
+                searchView?.setError(error: "")
             }
         }
     }

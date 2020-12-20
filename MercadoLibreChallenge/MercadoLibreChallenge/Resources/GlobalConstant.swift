@@ -14,7 +14,7 @@ enum Environment: String {
     case production = "production"
     
     private struct Domains {
-        static let development = ""
+        static let development = "https://api.mercadolibre.com"
         static let production = ""
     }
     
@@ -59,6 +59,10 @@ struct GlobalConstants {
     
     //MARK: ENDPOINTS
     struct Endpoints {
+        
+        static func searchItems(itemSelected: String) -> String {
+            return baseUrl + "/sites/MCO/search?q=" + itemSelected
+        }
     }
     
     //MARK: Headers
@@ -67,16 +71,24 @@ struct GlobalConstants {
     
     //MARK: - API SERVICES
     struct NameServices {
+        
+        static let searchItems = "searchItems"
     }
     
     //MARK: - Colors
     struct Colors {
-        static let yellowMercadoLibre: UIColor = #colorLiteral(red: 1, green: 0.9450980392, blue: 0.3490196078, alpha: 1)
+        static let yellowMercadoLibre: UIColor = #colorLiteral(red: 0.9921568627, green: 0.862745098, blue: 0.07450980392, alpha: 1)
     }
     
     //MARK: - Segue
     struct Segues {
         static let goToSearch = "goToSearch"
+        static let goToSearchDetail = "goToSearchDetail"
+    }
+    
+    //MARK: - TableViewCellStrings
+    struct CellStrings {
+        static let detailSearched = "detailSearched"
     }
     
 }

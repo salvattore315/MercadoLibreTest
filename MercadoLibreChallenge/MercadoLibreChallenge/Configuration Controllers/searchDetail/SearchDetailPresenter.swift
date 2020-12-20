@@ -29,9 +29,9 @@ class SearchDetailPresenter: Presenter {
     //MARK: - UserDefault
     
     //MARK: - Service
-    public func getPostsService() {
+    public func getPostsService(itemSearched: String) {
         self.searchView?.startCallingService()
-        service.callServiceObject(parameters: nil, service: "") { [self] (data, error) in
+        service.callServiceObject(parameters: nil, service: GlobalConstants.NameServices.searchItems, queryLink: itemSearched) { [self] (data, error) in
             if error != nil {
                 self.searchView?.setError(error: "")
             }

@@ -6,18 +6,20 @@
   
 */
 
-//TabBar
+//MARK: - TabBar
 "start" = "Start";
 "favorites" = "Favorites";
 "myShopping" = "My Shopping";
 "notifications" = "Notifications";
 "more" = "More";
 
-//House
+//MARK: - House
 "searchBarMeli" = "Search in Mercado Libre";
 
+//MARK: - SearchedItem
+"freeShipping" = "Free Shipping";
 
-//Building Screens
+//MARK: - Building Screens
 "inConstruction" = "In Construction";
 "loginAccount" = "Log in to your account";
 "seeFavorites" = "Do you want to see your favorites?";

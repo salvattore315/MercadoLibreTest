@@ -31,6 +31,8 @@ class HouseViewController: BaseViewController {
         searchBar.backgroundImage = UIImage()
         searchBar.searchTextField.backgroundColor = .white
         searchBar.placeholder = "searchBarMeli".localized
+        searchBar.searchTextField.font = .systemFont(ofSize: 15, weight: .light)
+        searchBar.searchTextField.textColor = .systemGray2
     }
     
     //MARK: - Segues
