@@ -24,27 +24,40 @@ class SearchDetailPresenter: Presenter {
         searchView = nil
     }
     
-    //MARK: - Action
-
-    //MARK: - UserDefault
-    
     //MARK: - Service
-    public func getPostsService(itemSearched: String) {
+    public func getItemService(itemId: String) {
         self.searchView?.startCallingService()
-        service.callServiceObject(parameters: nil, service: GlobalConstants.NameServices.searchItems) { [self] (data, error) in
+        service.callServiceObject(parameters: nil,
+                                  service: GlobalConstants.NameServices.itemDetail,
+                                  queryLink: itemId) { [self] (data, error) in
             if error != nil {
                 self.searchView?.setError(error: "")
             }
             
-            if data != nil {
-//                if let posts: [Post] = JSONDecoder().decodeResponse(from: data){
-//                    print(posts)
-//                    saveAllPostInRealm(posts: posts)
-//                    getAllPostInRealm()
-//                    self.postView?.finishCallService()
-//                } else {
-//                    self.postView?.setError(error: "")
-//                }
+            let responseParsed = try? jsonResponse<ItemSelected>.decode(data: data)
+            if(responseParsed?.results != nil) {
+                searchView?.setResponse(objectCodable: (responseParsed?.results ?? nil)!)
+                getItemDescriptionService(itemId: itemId)
+            } else {
+                searchView?.setError(error: "")
+            }
+        }
+    }
+    
+    public func getItemDescriptionService(itemId: String) {
+        service.callServiceObject(parameters: nil,
+                                  service: GlobalConstants.NameServices.itemDetailDescription,
+                                  queryLink: itemId) { [self] (data, error) in
+            if error != nil {
+                self.searchView?.setError(error: "")
+            }
+            
+            let responseParsed = try? jsonResponse<ItemDescription>.decode(data: data)
+            if(responseParsed?.results != nil) {
+                searchView?.setResponse(objectCodable: (responseParsed?.results ?? nil)!)
+                searchView?.finishCallService()
+            } else {
+                searchView?.setError(error: "")
             }
         }
     }

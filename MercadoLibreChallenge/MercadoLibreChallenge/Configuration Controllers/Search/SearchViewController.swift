@@ -20,7 +20,7 @@ class SearchViewController: BaseViewController {
     
     public var itemSearched: String = ""
     private var items: [ItemSearched] = []
-    private var itemSelected: ItemSearched?
+    private var itemSearchedObject: ItemSearched?
     private let presenter = SearchPresenter()
     
     //MARK: - Lifecycle
@@ -31,7 +31,9 @@ class SearchViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter.getItemsService(itemSearched: itemSearched)
+        if(items.isEmpty) {
+            presenter.getItemsService(itemSearched: itemSearched)
+        }
     }
 
     //MARK: - Setup
@@ -57,7 +59,7 @@ class SearchViewController: BaseViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is SearchDetailViewController {
             let vc = segue.destination as? SearchDetailViewController
-            vc?.itemSelected = itemSelected
+            vc?.itemSearched = itemSearchedObject
         }
     }
 }
@@ -71,7 +73,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: GlobalConstants.CellStrings.detailSearched,
+        let cell = tableView.dequeueReusableCell(withIdentifier: GlobalConstants.CellStrings.detailSearchedCell,
                                                  for: indexPath) as! ItemTableViewCell
         let item = items[indexPath.row]
         cell.setup(item: item)
@@ -80,7 +82,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = items[indexPath.row]
-        self.itemSelected = item
+        self.itemSearchedObject = item
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.performSegue(withIdentifier: GlobalConstants.Segues.goToSearchDetail, sender: nil)
     }
