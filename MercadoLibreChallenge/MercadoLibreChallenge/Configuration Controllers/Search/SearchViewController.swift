@@ -29,6 +29,8 @@ class SearchViewController: BaseViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.title = "meli".localized
         presenter.attachView(view: self)
     }
     

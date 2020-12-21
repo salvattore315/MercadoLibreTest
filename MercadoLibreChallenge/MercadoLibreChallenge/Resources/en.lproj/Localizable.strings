@@ -6,6 +6,8 @@
   
 */
 
+"meli" = "Mercado Libre";
+
 //MARK: - TabBar
 "start" = "Start";
 "favorites" = "Favorites";

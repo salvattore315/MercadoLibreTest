@@ -22,6 +22,7 @@ class OnlySearchViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationItem.title = "meli".localized
         searchBar.delegate = self
         presenter.attachView(view: self)
         
@@ -41,8 +42,6 @@ class OnlySearchViewController: BaseViewController {
         searchBar.searchTextField.textColor = .systemGray2
         searchBar.showsCancelButton = true
     }
-    
-    
 }
 
 extension OnlySearchViewController: UISearchBarDelegate {

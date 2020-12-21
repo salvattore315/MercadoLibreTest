@@ -19,7 +19,8 @@ class HouseViewController: BaseViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.title = "meli".localized
         searchBar.delegate = self
         presenter.attachView(view: self)
         
