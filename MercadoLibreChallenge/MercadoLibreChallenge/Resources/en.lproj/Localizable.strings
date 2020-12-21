@@ -21,6 +21,9 @@
 "notFind" = "No posts found";
 "searchAnother" = "Check that the word is well written. You can also try with less or more general terms.";
 
+//MARK: - ItemDeatil
+"imagesNotFound" = "Images not found";
+
 //MARK: - Building Screens
 "inConstruction" = "In Construction";
 "loginAccount" = "Log-in to your account";

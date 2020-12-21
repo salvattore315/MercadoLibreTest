@@ -59,8 +59,13 @@ struct GlobalConstants {
     
     //MARK: ENDPOINTS
     struct Endpoints {
-        
         static let searchItems = baseUrl + "/sites/MCO/search"
+        static func itemDetail(id:String) -> String {
+            return baseUrl + "/items/" + id
+        }
+        static func itemDeatilDescription(id: String) -> String {
+            return baseUrl + "/items/" + id + "/description"
+        }
         
     }
     
@@ -70,8 +75,10 @@ struct GlobalConstants {
     
     //MARK: - API SERVICES
     struct NameServices {
-        
         static let searchItems = "searchItems"
+        static let itemDetail = "itemDetail"
+        static let itemDetailDescription = "itemDetailDescription"
+        static let itemDetailQuestion = "itemDetailQuestion"
     }
     
     //MARK: - Colors
@@ -87,7 +94,8 @@ struct GlobalConstants {
     
     //MARK: - TableViewCellStrings
     struct CellStrings {
-        static let detailSearched = "detailSearched"
+        static let detailSearchedCell = "detailSearchedCell"
+        static let picturesCell = "picturesCell"
     }
     
 }
