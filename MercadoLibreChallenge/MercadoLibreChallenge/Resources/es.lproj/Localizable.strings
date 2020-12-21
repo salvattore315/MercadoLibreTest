@@ -6,12 +6,27 @@
   
 */
 
-//TabBar
-"start" = "Start";
-"favorites" = "Favorites";
-"myShopping" = "My Shopping";
-"notifications" = "Notifications";
-"more" = "More";
+//MARK: - TabBar
+"start" = "Inicio";
+"favorites" = "Favoritos";
+"myShopping" = "Mis Compras";
+"notifications" = "Notificaciones";
+"more" = "Mas";
 
-//Building Screens
-"inConstruction" = "In Construction";
+//MARK: - House
+"searchBarMeli" = "Bucar en Mercado Libre";
+
+//MARK: - SearchedItem
+"freeShipping" = "Envio Gratis";
+"notFind" = "No encontramos publicaciones";
+"searchAnother" = "Revisa que la palabra está bien escrita. También puedes probar con menos términos o más generales.";
+
+//MARK: - ItemDeatil
+"imagesNotFound" = "Imagenes no encontradas";
+
+//MARK: - Building Screens
+"inConstruction" = "En construcion";
+"loginAccount" = "Ingresa a tu cuenta";
+"seeFavorites" = "¿Quieres ver tus favoritos?";
+"seeMyShopping" = "¿Quieres ver tus compras?";
+"seeNotifications" = "¿Quieres ver tus notificaciones?";

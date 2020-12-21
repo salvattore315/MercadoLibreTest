@@ -40,6 +40,8 @@ class OnlySearchViewController: BaseViewController {
         searchBar.searchTextField.font = .systemFont(ofSize: 15, weight: .light)
         searchBar.searchTextField.textColor = .systemGray2
     }
+    
+    
 }
 
 extension OnlySearchViewController: UISearchBarDelegate {

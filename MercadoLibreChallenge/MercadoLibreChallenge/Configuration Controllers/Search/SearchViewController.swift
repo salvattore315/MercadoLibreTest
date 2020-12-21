@@ -19,7 +19,7 @@ class SearchViewController: BaseViewController {
     @IBOutlet weak var searchOtherLabel: UILabel!
     
     public var itemSearched: String = ""
-    private var itemsSearched = ""
+    private var itemsSearchedOnlySearch = ""
     private var items: [ItemSearched] = []
     private var itemSearchedObject: ItemSearched?
     private let presenter = SearchPresenter()
@@ -69,6 +69,7 @@ class SearchViewController: BaseViewController {
     private func presentSearchViewController() {
         let storyboard = UIStoryboard(name: GlobalConstants.ViewControllers.main, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: GlobalConstants.Segues.searchItem) as! SearchViewController
+        vc.itemSearched = itemsSearchedOnlySearch
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -114,8 +115,8 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 extension SearchViewController: OnlySearchViewControllerDelegate {
     //MARK: - OnlySearchViewControllerDelegate
     func didSelectedItems(items: String) {
-        self.itemsSearched = items
-        if(!(itemsSearched.isEmpty)) {
+        self.itemsSearchedOnlySearch = items
+        if(!(itemsSearchedOnlySearch.isEmpty)) {
             presentSearchViewController()
         }
     }
