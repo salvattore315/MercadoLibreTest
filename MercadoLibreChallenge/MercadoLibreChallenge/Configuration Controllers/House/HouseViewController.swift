@@ -13,6 +13,7 @@ class HouseViewController: BaseViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var buyButton: UIButton!
     
+    private var itemsSearched = ""
     private let presenter = HousePresenter()
 
     //MARK: - Lifecycle
@@ -27,7 +28,6 @@ class HouseViewController: BaseViewController {
     //MARK: - Setup
     override func setup() {
         tabBarItem.title = "start".localized
-        
         searchBar.backgroundImage = UIImage()
         searchBar.searchTextField.backgroundColor = .white
         searchBar.placeholder = "searchBarMeli".localized
@@ -35,23 +35,39 @@ class HouseViewController: BaseViewController {
         searchBar.searchTextField.textColor = .systemGray2
     }
     
+    //MARK: - Actions
+    //For show the screen only search
+    private func presentSearchViewController() {
+        let storyboard = UIStoryboard(name: GlobalConstants.ViewControllers.main, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: GlobalConstants.Segues.onlySearch) as! OnlySearchViewController
+        vc.delegate = self
+        self.present(vc, animated: true)
+    }
+    
     //MARK: - Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is SearchViewController {
             let vc = segue.destination as? SearchViewController
-            vc?.itemSearched = searchBar.text ?? ""
+            vc?.itemSearched = self.itemsSearched
         }
     }
 }
 
 extension HouseViewController: UISearchBarDelegate {
-    
     //MARK: - SearchBarDelegates
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if(!(searchBar.text?.isEmpty ?? true)) {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        presentSearchViewController()
+    }
+}
+
+extension HouseViewController: OnlySearchViewControllerDelegate {
+    //MARK: - OnlySearchViewControllerDelegate
+    func didSelectedItems(items: String) {
+        self.itemsSearched = items
+        if(!(itemsSearched.isEmpty)) {
             self.performSegue(withIdentifier: GlobalConstants.Segues.goToSearch, sender: nil)
         }
-        searchBar.resignFirstResponder()
     }
 }
 

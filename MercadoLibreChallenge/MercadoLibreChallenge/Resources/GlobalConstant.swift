@@ -90,6 +90,13 @@ struct GlobalConstants {
     struct Segues {
         static let goToSearch = "goToSearch"
         static let goToSearchDetail = "goToSearchDetail"
+        static let onlySearch = "onlySearch"
+        static let searchItem = "searchItem"
+    }
+    
+    //MARK: - ViewControllers
+    struct ViewControllers {
+        static let main = "Main"
     }
     
     //MARK: - TableViewCellStrings

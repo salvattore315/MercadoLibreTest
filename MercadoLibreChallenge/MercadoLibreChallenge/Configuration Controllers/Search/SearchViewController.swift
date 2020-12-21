@@ -19,6 +19,7 @@ class SearchViewController: BaseViewController {
     @IBOutlet weak var searchOtherLabel: UILabel!
     
     public var itemSearched: String = ""
+    private var itemsSearched = ""
     private var items: [ItemSearched] = []
     private var itemSearchedObject: ItemSearched?
     private let presenter = SearchPresenter()
@@ -45,6 +46,7 @@ class SearchViewController: BaseViewController {
         searchBar.searchTextField.font = .systemFont(ofSize: 15, weight: .light)
         searchBar.searchTextField.textColor = .systemGray2
         searchBar.text = itemSearched
+        searchBar.showsSearchResultsButton = false
         
         noFindLabel.text = "notFind".localized
         searchOtherLabel.text = "searchAnother".localized
@@ -53,6 +55,21 @@ class SearchViewController: BaseViewController {
     //MARK: - Actions
     @IBAction func backPress(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    //For show the screen only search
+    private func presentOnlySearchViewController() {
+        let storyboard = UIStoryboard(name: GlobalConstants.ViewControllers.main, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: GlobalConstants.Segues.onlySearch) as! OnlySearchViewController
+        vc.delegate = self
+        self.present(vc, animated: true)
+    }
+    
+    //For show a new screen of search
+    private func presentSearchViewController() {
+        let storyboard = UIStoryboard(name: GlobalConstants.ViewControllers.main, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: GlobalConstants.Segues.searchItem) as! SearchViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     //MARK: - Segues
@@ -64,9 +81,15 @@ class SearchViewController: BaseViewController {
     }
 }
 
+extension SearchViewController: UISearchBarDelegate {
+    //MARK: - SearchBarDelegates
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        presentOnlySearchViewController()
+    }
+}
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
-
     //MARK: - TableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -85,6 +108,16 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         self.itemSearchedObject = item
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.performSegue(withIdentifier: GlobalConstants.Segues.goToSearchDetail, sender: nil)
+    }
+}
+
+extension SearchViewController: OnlySearchViewControllerDelegate {
+    //MARK: - OnlySearchViewControllerDelegate
+    func didSelectedItems(items: String) {
+        self.itemsSearched = items
+        if(!(itemsSearched.isEmpty)) {
+            presentSearchViewController()
+        }
     }
 }
 

@@ -8,22 +8,15 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
+    @IBOutlet weak var tabbar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let items = tabbar.items
+        items?[0].title = "start".localized
+        items?[1].title = "favorites".localized
+        items?[2].title = "myShopping".localized
+        items?[3].title = "notifications".localized
+        items?[4].title = "more".localized
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

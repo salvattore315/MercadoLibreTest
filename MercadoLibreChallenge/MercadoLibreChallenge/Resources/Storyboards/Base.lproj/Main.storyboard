@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="1179.7101449275362" y="-1255.5803571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Only Search View Controller-->
         <scene sceneID="U2N-bJ-ule">
             <objects>
-                <viewController id="fka-OC-rJN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onlySearch" modalPresentationStyle="fullScreen" id="fka-OC-rJN" customClass="OnlySearchViewController" customModule="MercadoLibreChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RFM-Xg-bdS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,15 +144,19 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="x2r-ul-5oN">
-                                        <rect key="frame" x="20" y="22" width="379" height="56"/>
+                                        <rect key="frame" x="10" y="22" width="389" height="56"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="RFM-Xg-bdS" id="IlP-ss-1ao"/>
+                                        </connections>
                                     </searchBar>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.86274509803921573" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="hkF-Wq-2wb"/>
-                                    <constraint firstItem="x2r-ul-5oN" firstAttribute="leading" secondItem="5Rs-iH-6kU" secondAttribute="leading" constant="20" id="w52-KD-6u6"/>
+                                    <constraint firstItem="x2r-ul-5oN" firstAttribute="leading" secondItem="5Rs-iH-6kU" secondAttribute="leading" constant="10" id="w52-KD-6u6"/>
                                     <constraint firstAttribute="trailing" secondItem="x2r-ul-5oN" secondAttribute="trailing" constant="15" id="y0X-b4-Qgl"/>
                                     <constraint firstItem="x2r-ul-5oN" firstAttribute="centerY" secondItem="5Rs-iH-6kU" secondAttribute="centerY" id="zCI-fZ-Jzd"/>
                                 </constraints>
@@ -166,6 +170,9 @@
                             <constraint firstItem="5Rs-iH-6kU" firstAttribute="leading" secondItem="tnK-5u-eMf" secondAttribute="leading" id="qou-Nk-QZv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="x2r-ul-5oN" id="ytg-wk-eCX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDe-2K-n6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,7 +181,7 @@
         <!--Search View Controller-->
         <scene sceneID="mKo-qs-6HJ">
             <objects>
-                <viewController id="SlK-n1-1zn" customClass="SearchViewController" customModule="MercadoLibreChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchItem" id="SlK-n1-1zn" customClass="SearchViewController" customModule="MercadoLibreChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T4C-mq-p6G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,7 +190,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="75"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="XuH-KI-3GV">
-                                        <rect key="frame" x="44.5" y="9.5" width="326.5" height="56"/>
+                                        <rect key="frame" x="34.5" y="9.5" width="336.5" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSC-HX-dGO">
@@ -204,7 +211,7 @@
                                 <constraints>
                                     <constraint firstItem="5Mx-s0-Q1U" firstAttribute="leading" secondItem="XuH-KI-3GV" secondAttribute="trailing" constant="10" id="DVy-CM-Jjb"/>
                                     <constraint firstAttribute="height" constant="75" id="F4b-wx-J2s"/>
-                                    <constraint firstItem="XuH-KI-3GV" firstAttribute="leading" secondItem="aSC-HX-dGO" secondAttribute="trailing" constant="15" id="Fnf-ic-alA"/>
+                                    <constraint firstItem="XuH-KI-3GV" firstAttribute="leading" secondItem="aSC-HX-dGO" secondAttribute="trailing" constant="5" id="Fnf-ic-alA"/>
                                     <constraint firstItem="XuH-KI-3GV" firstAttribute="centerY" secondItem="aSC-HX-dGO" secondAttribute="centerY" id="NPZ-H0-TOF"/>
                                     <constraint firstItem="XuH-KI-3GV" firstAttribute="centerY" secondItem="jLC-HX-7VQ" secondAttribute="centerY" id="R7s-rS-mbr"/>
                                     <constraint firstItem="5Mx-s0-Q1U" firstAttribute="centerY" secondItem="aSC-HX-dGO" secondAttribute="centerY" id="RTE-hZ-IAY"/>
@@ -668,16 +675,17 @@
             </objects>
             <point key="canvasLocation" x="269.56521739130437" y="-564.50892857142856"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="dUX-g4-ey8">
             <objects>
-                <tabBarController id="if3-fM-xW4" sceneMemberID="viewController">
+                <tabBarController id="if3-fM-xW4" customClass="TabBarViewController" customModule="MercadoLibreChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TeP-Sa-fuP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="tabbar" destination="TeP-Sa-fuP" id="ytX-wj-r17"/>
                         <segue destination="E1L-8c-2dc" kind="relationship" relationship="viewControllers" id="u2L-BT-hts"/>
                         <segue destination="YvQ-sZ-jTD" kind="relationship" relationship="viewControllers" id="je3-dW-wuU"/>
                         <segue destination="AcQ-ma-5b5" kind="relationship" relationship="viewControllers" id="fd0-nd-LZd"/>
