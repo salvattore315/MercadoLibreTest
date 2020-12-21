@@ -46,7 +46,7 @@ class SearchViewController: BaseViewController {
         searchBar.searchTextField.font = .systemFont(ofSize: 15, weight: .light)
         searchBar.searchTextField.textColor = .systemGray2
         searchBar.text = itemSearched
-        searchBar.showsSearchResultsButton = false
+        searchBar.searchTextField.clearButtonMode = .never
         
         noFindLabel.text = "notFind".localized
         searchOtherLabel.text = "searchAnother".localized

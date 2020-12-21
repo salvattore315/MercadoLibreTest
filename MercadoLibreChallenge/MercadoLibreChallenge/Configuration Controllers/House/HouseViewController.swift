@@ -33,6 +33,7 @@ class HouseViewController: BaseViewController {
         searchBar.placeholder = "searchBarMeli".localized
         searchBar.searchTextField.font = .systemFont(ofSize: 15, weight: .light)
         searchBar.searchTextField.textColor = .systemGray2
+        searchBar.searchTextField.clearButtonMode = .never
     }
     
     //MARK: - Actions
