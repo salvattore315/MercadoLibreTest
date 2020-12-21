@@ -17,7 +17,7 @@ struct ItemDescription: Codable {
 
 struct Snapshot: Codable {
     var url: String?
-    var width: String?
-    var height: String?
+    var width: Int?
+    var height: Int?
     var status: String?
 }

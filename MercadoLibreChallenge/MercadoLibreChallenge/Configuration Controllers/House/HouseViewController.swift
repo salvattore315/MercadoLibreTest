@@ -38,11 +38,11 @@ class HouseViewController: BaseViewController {
     
     //MARK: - Actions
     //For show the screen only search
-    private func presentSearchViewController() {
+    private func presentOnlySearchViewController() {
         let storyboard = UIStoryboard(name: GlobalConstants.ViewControllers.main, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: GlobalConstants.Segues.onlySearch) as! OnlySearchViewController
         vc.delegate = self
-        self.present(vc, animated: true)
+        self.present(vc, animated: false)
     }
     
     //MARK: - Segues
@@ -58,7 +58,7 @@ extension HouseViewController: UISearchBarDelegate {
     //MARK: - SearchBarDelegates
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
-        presentSearchViewController()
+        presentOnlySearchViewController()
     }
 }
 

@@ -39,6 +39,7 @@ class OnlySearchViewController: BaseViewController {
         searchBar.placeholder = "searchBarMeli".localized
         searchBar.searchTextField.font = .systemFont(ofSize: 15, weight: .light)
         searchBar.searchTextField.textColor = .systemGray2
+        searchBar.showsCancelButton = true
     }
     
     
@@ -55,7 +56,7 @@ extension OnlySearchViewController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
 }
 

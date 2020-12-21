@@ -34,9 +34,9 @@ class SearchDetailPresenter: Presenter {
                 self.searchView?.setError(error: "")
             }
             
-            let responseParsed = try? jsonResponse<ItemSelected>.decode(data: data)
-            if(responseParsed?.results != nil) {
-                searchView?.setResponse(objectCodable: (responseParsed?.results ?? nil)!)
+            let responseParsed = try? ItemSelected.decode(data: data)
+            if(responseParsed != nil) {
+                searchView?.setResponse(objectCodable: (responseParsed ?? nil)!)
                 getItemDescriptionService(itemId: itemId)
             } else {
                 searchView?.setError(error: "")
@@ -52,9 +52,9 @@ class SearchDetailPresenter: Presenter {
                 self.searchView?.setError(error: "")
             }
             
-            let responseParsed = try? jsonResponse<ItemDescription>.decode(data: data)
-            if(responseParsed?.results != nil) {
-                searchView?.setResponse(objectCodable: (responseParsed?.results ?? nil)!)
+            let responseParsed = try? ItemDescription.decode(data: data)
+            if(responseParsed != nil) {
+                searchView?.setResponse(objectCodable: (responseParsed ?? nil)!)
                 searchView?.finishCallService()
             } else {
                 searchView?.setError(error: "")

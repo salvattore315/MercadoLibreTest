@@ -1,22 +1,26 @@
 PODS:
-  - Alamofire (5.4.0)
+  - Alamofire (5.4.1)
+  - KVNProgress (2.3.5)
   - SDWebImage (5.10.0):
     - SDWebImage/Core (= 5.10.0)
   - SDWebImage/Core (5.10.0)
 
 DEPENDENCIES:
   - Alamofire
+  - KVNProgress
   - SDWebImage
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KVNProgress
     - SDWebImage
 
 SPEC CHECKSUMS:
-  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
   SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
 
-PODFILE CHECKSUM: 05ef43ac2e77f48ce74e5ccf7ebe59a531e9147b
+PODFILE CHECKSUM: 14a3b456b1dfa7fc96041c08f8df263ec3fab6c0
 
 COCOAPODS: 1.10.0

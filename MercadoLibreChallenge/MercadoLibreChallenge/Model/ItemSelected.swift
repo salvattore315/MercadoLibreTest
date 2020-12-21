@@ -33,12 +33,10 @@ struct ItemSelected: Codable {
     var secure_thumbnail: String?
     var pictures: [Pictures]?
     var video_id: String?
-    var descriptions: [Descriptions]?
+    //var descriptions: [Descriptions]?
     var accepts_mercadopago: Bool?
     var non_mercado_pago_payment_methods: [String]?
     var international_delivery_mode: String?
-    var installments: Installments?
-    var address: Address?
     var catalog_product_id: String?
     var tags: [String]?
     var catalog_listing: Bool?

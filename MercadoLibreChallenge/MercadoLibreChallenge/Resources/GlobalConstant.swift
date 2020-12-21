@@ -84,6 +84,7 @@ struct GlobalConstants {
     //MARK: - Colors
     struct Colors {
         static let yellowMercadoLibre: UIColor = #colorLiteral(red: 0.9921568627, green: 0.862745098, blue: 0.07450980392, alpha: 1)
+        static let blueMercadoLibre: UIColor = #colorLiteral(red: 0, green: 0.01568627451, blue: 0.7176470588, alpha: 1)
     }
     
     //MARK: - Segue

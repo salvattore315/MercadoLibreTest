@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KVNProgress
 
 class SearchViewController: BaseViewController {
 
@@ -17,6 +18,7 @@ class SearchViewController: BaseViewController {
     @IBOutlet weak var magnifyingglassImageView: UIImageView!
     @IBOutlet weak var noFindLabel: UILabel!
     @IBOutlet weak var searchOtherLabel: UILabel!
+    @IBOutlet weak var contentTableView: UIView!
     
     public var itemSearched: String = ""
     private var itemsSearchedOnlySearch = ""
@@ -62,7 +64,7 @@ class SearchViewController: BaseViewController {
         let storyboard = UIStoryboard(name: GlobalConstants.ViewControllers.main, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: GlobalConstants.Segues.onlySearch) as! OnlySearchViewController
         vc.delegate = self
-        self.present(vc, animated: true)
+        self.present(vc, animated: false)
     }
     
     //For show a new screen of search
@@ -109,6 +111,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         self.itemSearchedObject = item
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.performSegue(withIdentifier: GlobalConstants.Segues.goToSearchDetail, sender: nil)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
 
@@ -124,11 +127,12 @@ extension SearchViewController: OnlySearchViewControllerDelegate {
 
 extension SearchViewController: BaseServiceView {
     func startCallingService() {
-        
+        KVNProgress.show(withStatus: "loading".localized,
+                         on: contentTableView)
     }
     
     func finishCallService() {
-        
+        KVNProgress.showSuccess(withStatus: "success".localized)
     }
     
     func setResponse(objectCodable: Any) {
@@ -155,5 +159,6 @@ extension SearchViewController: BaseServiceView {
     
     func setError(error: String?) {
         setEmpty()
+        KVNProgress.showError(withStatus: "error".localized)
     }
 }

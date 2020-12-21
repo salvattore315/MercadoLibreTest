@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KVNProgress
 
 class SearchDetailViewController: BaseViewController {
 
@@ -46,7 +47,7 @@ class SearchDetailViewController: BaseViewController {
 
 }
 
-extension SearchDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension SearchDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return pictures.count
     }
@@ -59,17 +60,21 @@ extension SearchDetailViewController: UICollectionViewDelegate, UICollectionView
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
 }
 
 
 extension SearchDetailViewController: BaseServiceView {
     func startCallingService() {
-        
+        KVNProgress.show(withStatus: "loading".localized,
+                         on: view)
     }
     
     func finishCallService() {
-        
+        KVNProgress.showSuccess(withStatus: "done".localized)
+
     }
     
     func setResponse(objectCodable: Any) {
@@ -90,11 +95,14 @@ extension SearchDetailViewController: BaseServiceView {
             self.imagesNotFoundLabel.isHidden = false
         } else {
             self.imagesNotFoundLabel.isHidden = true
+            self.collectionView.reloadData()
         }
     }
     
     
     func setError(error: String?) {
-        self.navigationController?.popViewController(animated: true)
+        KVNProgress.showError(withStatus: "error".localized) {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 }

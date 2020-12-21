@@ -11,6 +11,7 @@ class BaseViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        Helper.initScreenProgress()
     }
     
     override func viewWillAppear(_ animated: Bool) {

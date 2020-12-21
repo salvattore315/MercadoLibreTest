@@ -30,3 +30,9 @@
 "seeFavorites" = "Do you want to see your favorites?";
 "seeMyShopping" = "Do you want to see your purchases?";
 "seeNotifications" = "Do you want to see your notifications?";
+
+//MARK: - Loader
+"loading" = "Loading...";
+"error" = "Error";
+"done" = "Done";
+"success" = "Success";

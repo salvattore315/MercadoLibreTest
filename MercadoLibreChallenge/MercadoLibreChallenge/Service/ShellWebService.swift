@@ -38,7 +38,7 @@ class ShellWebService : Service {
             if let idSearched = queryLink {
                 id = idSearched
             }
-            returnService(.get, GlobalConstants.Endpoints.itemDeatilDescription(id: id), JSONEncoding())
+            returnService(.get, GlobalConstants.Endpoints.itemDeatilDescription(id: id), URLEncoding())
         default:
             break
         }
