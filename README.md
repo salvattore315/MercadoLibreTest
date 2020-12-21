@@ -26,15 +26,15 @@ Pod install
 
 ## Architecture
 
-In this project the MPV architecture was used
+In this project the MPV architecture was used.
 
-This architecture allows the project screens to be built quickly, it also keeps in an organized way what are the models on the one hand and on the other hand the views with the viewControllers, being the presenter the one who maintains the communication of these
-
-
-In this project, Storyboard was used to build views more quickly (since only one dev was found). However, we still love building view by code, especially because it makes it easier for several devs to develop in the project
+This architecture allows the project screens to be built quickly, it also keeps in an organized way what are the models on the one hand and on the other hand the views with the viewControllers, being the presenter the one who maintains the communication of these.
 
 
-I hope you like the project very much, also its design and I am open to any point of improvement, thanks for the opportunity
+In this project, Storyboard was used to build views more quickly (since only one dev was found). However, we still love building view by code, especially because it makes it easier for several devs to develop in the project.
+
+
+I hope you like the project very much, also its design and I am open to any point of improvement, thanks for the opportunity.
 
 ## Library
 
