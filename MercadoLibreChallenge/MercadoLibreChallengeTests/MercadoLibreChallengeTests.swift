@@ -1,8 +1,8 @@
 //
-//  MercadoLibreChallengeTests.swift
+//  MercadoLibreTests.swift
 //  MercadoLibreChallengeTests
 //
-//  Created by Salvador Martinez on 19/12/20.
+//  Created by Salvador Martinez on 21/12/20.
 //
 
 import XCTest
@@ -10,24 +10,92 @@ import XCTest
 
 class MercadoLibreChallengeTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    public let service: ShellWebService = ShellWebService()
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testItemsSearchService() {
+        let expectation1 = expectation(description: "test service asynchronous")
+        service.callServiceObject(parameters: ["q": "vaso" as AnyObject],
+                                  service: GlobalConstants.NameServices.searchItems,
+                                  queryLink: nil) { (data, error) in
+            if error != nil {
+                XCTAssertNotNil(error, "error was a error")
+                expectation1.fulfill()
+                return
+            }
+            
+            XCTAssertNil(error, "error was nil")
+            XCTAssertNotNil(data, "data was a answer")
+            let responseParsed = jsonResponse<[ItemSearched]>.decode(data: data)
+            if(responseParsed?.results != nil) {
+                XCTAssertNotNil(responseParsed, "data was parce")
+            } else {
+                XCTAssertNil(responseParsed, "data was nil")
+            }
+            expectation1.fulfill()
         }
+        
+        waitForExpectations(timeout: 100, handler: { (error) in
+            if let error = error {
+                print("Failed : \(error.localizedDescription)")
+            }
+        })
     }
-
+    
+    func testItemDetailService() {
+        let expectation1 = expectation(description: "test service asynchronous")
+        service.callServiceObject(parameters: nil,
+                                  service: GlobalConstants.NameServices.itemDetail,
+                                  queryLink: "") {  (data, error) in
+            if error != nil {
+                XCTAssertNotNil(error, "error was a error")
+                expectation1.fulfill()
+                return
+            }
+            
+            XCTAssertNil(error, "error was nil")
+            XCTAssertNotNil(data, "data was a answer")
+            let responseParsed = ItemSelected.decode(data: data)
+            if(responseParsed != nil) {
+                XCTAssertNotNil(responseParsed, "data was parce")
+            } else {
+                XCTAssertNil(responseParsed, "data was nil")
+            }
+            expectation1.fulfill()
+        }
+        
+        waitForExpectations(timeout: 100, handler: { (error) in
+            if let error = error {
+                print("Failed : \(error.localizedDescription)")
+            }
+        })
+    }
+    
+    func testItemDetailDescriptionService() {
+        let expectation1 = expectation(description: "test service asynchronous")
+        service.callServiceObject(parameters: nil,
+                                  service: GlobalConstants.NameServices.itemDetailDescription,
+                                  queryLink: "") { (data, error) in
+            if error != nil {
+                XCTAssertNotNil(error, "error was a error")
+                expectation1.fulfill()
+                return
+            }
+            
+            XCTAssertNil(error, "error was nil")
+            XCTAssertNotNil(data, "data was a answer")
+            let responseParsed = ItemDescription.decode(data: data)
+            if(responseParsed != nil) {
+                XCTAssertNotNil(responseParsed, "data was parce")
+            } else {
+                XCTAssertNil(responseParsed, "data was nil")
+            }
+            expectation1.fulfill()
+        }
+        
+        waitForExpectations(timeout: 100, handler: { (error) in
+            if let error = error {
+                print("Failed : \(error.localizedDescription)")
+            }
+        })
+    }
 }
