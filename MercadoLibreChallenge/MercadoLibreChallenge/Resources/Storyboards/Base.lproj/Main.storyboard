@@ -453,11 +453,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*1/4*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz7-FS-B1n">
+                                        <rect key="frame" x="15" y="65" width="45" height="25"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="MrX-ab-oT1"/>
+                                            <constraint firstAttribute="width" constant="45" id="P1V-Pj-2x3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="8c6-Im-Qty" firstAttribute="trailing" secondItem="rgF-4l-BUd" secondAttribute="trailing" constant="15" id="3Dm-hB-tia"/>
                                     <constraint firstItem="8c6-Im-Qty" firstAttribute="top" secondItem="rgF-4l-BUd" secondAttribute="bottom" constant="15" id="AIL-Kc-pQH"/>
                                     <constraint firstItem="HfA-DV-ECa" firstAttribute="trailing" secondItem="fP2-0k-pNj" secondAttribute="trailing" id="DWn-r4-GDN"/>
+                                    <constraint firstItem="8c6-Im-Qty" firstAttribute="top" secondItem="Yz7-FS-B1n" secondAttribute="top" id="IeK-ee-C2E"/>
                                     <constraint firstItem="HfA-DV-ECa" firstAttribute="top" secondItem="fP2-0k-pNj" secondAttribute="bottom" constant="15" id="KHY-Mk-0HV"/>
                                     <constraint firstItem="kS7-Sl-CqR" firstAttribute="leading" secondItem="8c6-Im-Qty" secondAttribute="leading" constant="30" id="Lhn-yX-bjt"/>
                                     <constraint firstItem="fP2-0k-pNj" firstAttribute="top" secondItem="8c6-Im-Qty" secondAttribute="bottom" constant="15" id="N8g-d0-YEZ"/>
@@ -466,6 +478,7 @@
                                     <constraint firstItem="HfA-DV-ECa" firstAttribute="leading" secondItem="fP2-0k-pNj" secondAttribute="leading" id="Rpn-ac-Nza"/>
                                     <constraint firstAttribute="bottom" secondItem="HfA-DV-ECa" secondAttribute="bottom" constant="10" id="dMQ-HW-ugM"/>
                                     <constraint firstItem="kS7-Sl-CqR" firstAttribute="trailing" secondItem="8c6-Im-Qty" secondAttribute="trailing" constant="-30" id="eFa-PA-fed"/>
+                                    <constraint firstItem="8c6-Im-Qty" firstAttribute="leading" secondItem="Yz7-FS-B1n" secondAttribute="leading" constant="-15" id="jCE-Mf-S9I"/>
                                     <constraint firstItem="kS7-Sl-CqR" firstAttribute="centerY" secondItem="8c6-Im-Qty" secondAttribute="centerY" id="jwb-tT-UhU"/>
                                     <constraint firstItem="8c6-Im-Qty" firstAttribute="leading" secondItem="EaR-SQ-NXk" secondAttribute="leading" id="vtw-LU-lVz"/>
                                     <constraint firstItem="8c6-Im-Qty" firstAttribute="leading" secondItem="rgF-4l-BUd" secondAttribute="leading" constant="-15" id="xBE-y0-AOL"/>
@@ -495,6 +508,7 @@
                         <outlet property="collectionView" destination="8c6-Im-Qty" id="i8Z-V7-J7R"/>
                         <outlet property="descriptionLabel" destination="HfA-DV-ECa" id="tAj-n7-0jy"/>
                         <outlet property="imagesNotFoundLabel" destination="kS7-Sl-CqR" id="Udh-UG-lat"/>
+                        <outlet property="pagerLabel" destination="Yz7-FS-B1n" id="snA-v2-OWi"/>
                         <outlet property="priceLabel" destination="fP2-0k-pNj" id="fh0-6c-K97"/>
                         <outlet property="titleLabel" destination="rgF-4l-BUd" id="3CC-bd-NWM"/>
                     </connections>

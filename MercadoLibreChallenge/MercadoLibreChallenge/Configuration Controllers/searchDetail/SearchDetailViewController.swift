@@ -16,6 +16,7 @@ class SearchDetailViewController: BaseViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imagesNotFoundLabel: UILabel!
+    @IBOutlet weak var pagerLabel: UILabel!
     
     public var itemSearched: ItemSearched?
     public var itemSelected: ItemSelected?
@@ -43,6 +44,8 @@ class SearchDetailViewController: BaseViewController {
     internal override func setup() {
         super.setup()
         self.imagesNotFoundLabel.text = "imagesNotFound".localized
+        pagerLabel.layer.cornerRadius = 10
+        pagerLabel.layer.masksToBounds = true
     }
 
 }
@@ -62,6 +65,14 @@ extension SearchDetailViewController: UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+       let visibleRect = CGRect(origin: self.collectionView.contentOffset, size: self.collectionView.bounds.size)
+       let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+       if let visibleIndexPath = self.collectionView.indexPathForItem(at: visiblePoint) {
+        self.pagerLabel.text = "\(visibleIndexPath.row+1)/\(pictures.count)"
+       }
     }
 }
 
@@ -92,9 +103,12 @@ extension SearchDetailViewController: BaseServiceView {
     func setEmpty() {
         if(pictures.isEmpty) {
             self.imagesNotFoundLabel.isHidden = false
+            self.pagerLabel.isHidden = true
         } else {
             self.imagesNotFoundLabel.isHidden = true
             self.collectionView.reloadData()
+            self.pagerLabel.isHidden = false
+            self.pagerLabel.text = "1/\(pictures.count)"
         }
     }
     
