@@ -34,7 +34,7 @@ class SearchDetailPresenter: Presenter {
                 self.searchView?.setError(error: "")
             }
             
-            let responseParsed = try? ItemSelected.decode(data: data)
+            let responseParsed = ItemSelected.decode(data: data)
             if(responseParsed != nil) {
                 searchView?.setResponse(objectCodable: (responseParsed ?? nil)!)
                 getItemDescriptionService(itemId: itemId)
@@ -52,7 +52,7 @@ class SearchDetailPresenter: Presenter {
                 self.searchView?.setError(error: "")
             }
             
-            let responseParsed = try? ItemDescription.decode(data: data)
+            let responseParsed = ItemDescription.decode(data: data)
             if(responseParsed != nil) {
                 searchView?.setResponse(objectCodable: (responseParsed ?? nil)!)
                 searchView?.finishCallService()

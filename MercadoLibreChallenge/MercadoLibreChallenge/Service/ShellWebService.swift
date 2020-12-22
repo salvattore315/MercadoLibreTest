@@ -92,21 +92,15 @@ class ShellWebService : Service {
                             }
                             break
                             
-                        case .failure(let error):
-                            var messageResponse = "serverError".localized
-                            let code : Int?
+                        case .failure(_):
+                            let messageResponse = "serverError".localized
+                            var code = 500
                             if response.response?.statusCode != nil{
                                 code = response.response!.statusCode
-                            }else{
-                                if let err = error as? URLError, err.code  == URLError.Code.notConnectedToInternet{
-                                    messageResponse = "noInternetConection".localized
-                                }
-                                code = 500
                             }
-                            
                             print("error")
                             
-                            let error:NSError = NSError(domain: "", code: code!, userInfo: ["message": messageResponse])
+                            let error:NSError = NSError(domain: "", code: code, userInfo: ["message": messageResponse])
                             
                             withCompletionBlock(nil,error)
                             break

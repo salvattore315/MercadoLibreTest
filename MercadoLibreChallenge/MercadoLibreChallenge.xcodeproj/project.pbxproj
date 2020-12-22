@@ -830,7 +830,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Colombia.MercadoLibre.MercadoLibreChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Development;
 		};
@@ -850,7 +850,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Colombia.MercadoLibre.MercadoLibreChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Production;
 		};
@@ -858,7 +858,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73D19DFEB760E808962FD692 /* Pods-MercadoLibreChallengeTests.development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MercadoLibreChallengeTests/Info.plist;
@@ -880,7 +879,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 504F2B699D2609ED088BE644 /* Pods-MercadoLibreChallengeTests.production.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MercadoLibreChallengeTests/Info.plist;
@@ -902,7 +900,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03E157243F781ED134DE82AD /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MercadoLibreChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -922,7 +919,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C43F4B37F500691D6A657CDB /* Pods-MercadoLibreChallenge-MercadoLibreChallengeUITests.production.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MercadoLibreChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

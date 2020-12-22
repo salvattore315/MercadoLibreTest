@@ -73,8 +73,7 @@ extension SearchDetailViewController: BaseServiceView {
     }
     
     func finishCallService() {
-        KVNProgress.showSuccess(withStatus: "done".localized)
-
+        KVNProgress.dismiss()
     }
     
     func setResponse(objectCodable: Any) {

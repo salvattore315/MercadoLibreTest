@@ -38,7 +38,7 @@ class SearchPresenter: Presenter {
                 searchView?.setError(error: "")
             }
             
-            let responseParsed = try? jsonResponse<[ItemSearched]>.decode(data: data)
+            let responseParsed = jsonResponse<[ItemSearched]>.decode(data: data)
             if(responseParsed?.results != nil) {
                 searchView?.setResponse(objectCodable: (responseParsed?.results ?? nil)!)
                 searchView?.finishCallService()

@@ -134,15 +134,15 @@ extension SearchViewController: BaseServiceView {
     }
     
     func finishCallService() {
-        KVNProgress.showSuccess(withStatus: "success".localized)
+        KVNProgress.dismiss()
     }
     
     func setResponse(objectCodable: Any) {
         if let items = objectCodable as? [ItemSearched] {
             self.items = items
             self.tableView.reloadData()
-            setEmpty()
         }
+        setEmpty()
     }
     
     func setEmpty() {
